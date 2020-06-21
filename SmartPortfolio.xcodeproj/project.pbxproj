@@ -15,6 +15,8 @@
 		1BD3B7D8249F9180008C5FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD3B7D7249F9180008C5FB3 /* Assets.xcassets */; };
 		1BD3B7DB249F9180008C5FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD3B7D9249F9180008C5FB3 /* LaunchScreen.storyboard */; };
 		1BD3B7DE249F9180008C5FB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7DD249F9180008C5FB3 /* main.m */; };
+		1BD3B7E7249F9495008C5FB3 /* YahooFinService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7E6249F9495008C5FB3 /* YahooFinService.m */; };
+		9CC6AD71188C17E0C5D7A1D4 /* libPods-SmartPortfolio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 487AF8CEE1676E57536707E2 /* libPods-SmartPortfolio.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,11 @@
 		1BD3B7DA249F9180008C5FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BD3B7DC249F9180008C5FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BD3B7DD249F9180008C5FB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BD3B7E5249F9495008C5FB3 /* YahooFinService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YahooFinService.h; sourceTree = "<group>"; };
+		1BD3B7E6249F9495008C5FB3 /* YahooFinService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YahooFinService.m; sourceTree = "<group>"; };
+		24371944EF7D1F62D0D44704 /* Pods-SmartPortfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPortfolio.release.xcconfig"; path = "Target Support Files/Pods-SmartPortfolio/Pods-SmartPortfolio.release.xcconfig"; sourceTree = "<group>"; };
+		487AF8CEE1676E57536707E2 /* libPods-SmartPortfolio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartPortfolio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B46671DB9D09E029D90CF2C /* Pods-SmartPortfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPortfolio.debug.xcconfig"; path = "Target Support Files/Pods-SmartPortfolio/Pods-SmartPortfolio.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC6AD71188C17E0C5D7A1D4 /* libPods-SmartPortfolio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +57,8 @@
 			children = (
 				1BD3B7C7249F9178008C5FB3 /* SmartPortfolio */,
 				1BD3B7C6249F9178008C5FB3 /* Products */,
+				A4E5B50C46C41E700B7F2B14 /* Pods */,
+				606D9716A0064EA6A25BB412 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +73,7 @@
 		1BD3B7C7249F9178008C5FB3 /* SmartPortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				1BD3B7E4249F946E008C5FB3 /* FinanceAPI */,
 				1BD3B7C8249F9178008C5FB3 /* AppDelegate.h */,
 				1BD3B7C9249F9178008C5FB3 /* AppDelegate.m */,
 				1BD3B7CB249F9178008C5FB3 /* SceneDelegate.h */,
@@ -79,6 +90,32 @@
 			path = SmartPortfolio;
 			sourceTree = "<group>";
 		};
+		1BD3B7E4249F946E008C5FB3 /* FinanceAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1BD3B7E5249F9495008C5FB3 /* YahooFinService.h */,
+				1BD3B7E6249F9495008C5FB3 /* YahooFinService.m */,
+			);
+			path = FinanceAPI;
+			sourceTree = "<group>";
+		};
+		606D9716A0064EA6A25BB412 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				487AF8CEE1676E57536707E2 /* libPods-SmartPortfolio.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4E5B50C46C41E700B7F2B14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B46671DB9D09E029D90CF2C /* Pods-SmartPortfolio.debug.xcconfig */,
+				24371944EF7D1F62D0D44704 /* Pods-SmartPortfolio.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,6 +123,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BD3B7E1249F9180008C5FB3 /* Build configuration list for PBXNativeTarget "SmartPortfolio" */;
 			buildPhases = (
+				E82D59BE03C9B668E9070BD2 /* [CP] Check Pods Manifest.lock */,
 				1BD3B7C1249F9178008C5FB3 /* Sources */,
 				1BD3B7C2249F9178008C5FB3 /* Frameworks */,
 				1BD3B7C3249F9178008C5FB3 /* Resources */,
@@ -144,6 +182,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E82D59BE03C9B668E9070BD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartPortfolio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1BD3B7C1249F9178008C5FB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -153,6 +216,7 @@
 				1BD3B7D6249F9178008C5FB3 /* SmartPortfolio.xcdatamodeld in Sources */,
 				1BD3B7D0249F9178008C5FB3 /* ViewController.m in Sources */,
 				1BD3B7CA249F9178008C5FB3 /* AppDelegate.m in Sources */,
+				1BD3B7E7249F9495008C5FB3 /* YahooFinService.m in Sources */,
 				1BD3B7CD249F9178008C5FB3 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +355,7 @@
 		};
 		1BD3B7E2249F9180008C5FB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B46671DB9D09E029D90CF2C /* Pods-SmartPortfolio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +373,7 @@
 		};
 		1BD3B7E3249F9180008C5FB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24371944EF7D1F62D0D44704 /* Pods-SmartPortfolio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

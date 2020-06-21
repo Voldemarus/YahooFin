@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "YahooFinService.h"
+
+
+
+NSString * const API_KEY    =   @"70ee8bfcb9msh39765d31b38ef39p17b092jsn7505f33368a8";
+
 
 @interface AppDelegate ()
 
@@ -17,6 +23,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    YahooFinService *fs = [YahooFinService sharedServiceWithAPIKey:API_KEY];
+    NSArray *tickersList = @[@"T",@"MAC", @"APA", @"TOT"];
+    [fs getQuotesForShares:tickersList];
+   // [fs getMarketSummaries];
+    
     return YES;
 }
 
