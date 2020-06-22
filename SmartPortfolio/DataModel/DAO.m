@@ -1,63 +1,85 @@
 //
-//  AppDelegate.m
+//  DAO.m
 //  SmartPortfolio
 //
-//  Created by Водолазкий В.В. on 21.06.2020.
+//  Created by Водолазкий В.В. on 22.06.2020.
 //  Copyright © 2020 Водолазкий В.В. All rights reserved.
 //
 
-#import "AppDelegate.h"
-// #import "YahooFinService.h"
-#import "IEXService.h"
+#import "DAO.h"
 
-#import "Definitions.h"
+@interface DAO () {
+    NSPersistentStoreCoordinator *_persistentStoreCoordinator;
+}
 
-// NSString * const API_KEY    =   @"70ee8bfcb9msh39765d31b38ef39p17b092jsn7505f33368a8";
-
-
-@interface AppDelegate ()
+@property (nonatomic, retain) NSManagedObjectContext *moc;
+@property (nonatomic, retain) NSManagedObjectContext *storeMoc;
 
 @end
 
-@implementation AppDelegate
+@implementation DAO
 
++ (DAO *) sharedInstance
+{
+    static DAO *sharedDAO = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedDAO = [[self alloc] init];
+    });
+    return sharedDAO;
+}
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (id) init {
+    if (self = [super init]) {
 
-//    YahooFinService *fs = [YahooFinService sharedServiceWithAPIKey:API_KEY];
-//    NSArray *tickersList = @[@"T",@"MAC", @"APA", @"TOT"];
-//    [fs getQuotesForShares:tickersList];
-   // [fs getMarketSummaries];
-
-    IEXService *srv  = [IEXService sharedInstanceWithToken:IEX_SANDBOX_TOKEN forSandbox:YES];
-    [srv requestCompanyInfoForTicker:@"APA"];
-
-    
-    return YES;
+    }
+    return self;
 }
 
 
-#pragma mark - UISceneSession lifecycle
 
 
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+#pragma mark - Service and Reference
+
+
+- (NSDictionary *) securityTypeDict
+{
+    return @{
+        @"ad"   :   @"ADR",
+        @"re"   :   @"REIT",
+        @"ce"   :   @"Closed end fund",
+        @"si"   :   @"Secondary Issue",
+        @"lp"   :   @"Limited Partnerships",
+        @"cs"   :   @"Common Stock",
+        @"et"   :   @"ETF",
+        @"wt"   :   @"Warrant",
+        @"oef"  :   @"Open Ended Fund",
+        @"cef"  :   @"Closed Ended Fund",
+        @"ps"   :   @"Preferred Stock",
+        @"ut"   :   @"Unit",
+    @"struct"   :   @"Structured Product",
+    };
 }
 
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+- (NSString *) securityTypeForCode:(NSString *)aCode
+{
+    return [[self securityTypeDict] objectForKey:aCode];
 }
 
 
 #pragma mark - Core Data stack
 
 @synthesize persistentContainer = _persistentContainer;
+
+- (NSManagedObjectContext *)moc
+{
+    return self.persistentContainer.viewContext;
+}
+
+- (NSManagedObjectContext *) storeMoc
+{
+    return self.persistentContainer.newBackgroundContext;
+}
 
 - (NSPersistentContainer *)persistentContainer {
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
@@ -68,7 +90,7 @@
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.
                     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                    
+
                     /*
                      Typical reasons for an error here include:
                      * The parent directory does not exist, cannot be created, or disallows writing.
@@ -76,14 +98,14 @@
                      * The device is out of space.
                      * The store could not be migrated to the current model version.
                      Check the error message to determine what the actual problem was.
-                    */
+                     */
                     NSLog(@"Unresolved error %@, %@", error, error.userInfo);
                     abort();
                 }
             }];
         }
     }
-    
+
     return _persistentContainer;
 }
 
@@ -99,5 +121,7 @@
         abort();
     }
 }
+
+
 
 @end

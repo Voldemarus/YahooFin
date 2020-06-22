@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="CompanyIndustry" representedClassName="CompanyIndustry" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="company" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Share" inverseName="industry" inverseEntity="Share"/>
+    </entity>
+    <entity name="Country" representedClassName="Country" syncable="YES" codeGenerationType="class">
+        <attribute name="fullName" optional="YES" attributeType="String"/>
+        <attribute name="rndFlag" optional="YES" attributeType="String"/>
+        <attribute name="shortName" optional="YES" attributeType="String"/>
+        <attribute name="sqFlag" optional="YES" attributeType="String"/>
+        <relationship name="companies" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Share" inverseName="country" inverseEntity="Share"/>
+        <relationship name="stocks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stock" inverseName="country" inverseEntity="Stock"/>
+    </entity>
+    <entity name="News" representedClassName="News" syncable="YES" codeGenerationType="class">
+        <attribute name="headline" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="language" optional="YES" attributeType="String"/>
+        <attribute name="paywall" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="published" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="source" optional="YES" attributeType="String"/>
+        <attribute name="summary" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="tickers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Share" inverseName="news" inverseEntity="Share"/>
+    </entity>
+    <entity name="Portfolio" representedClassName="Portfolio" syncable="YES" codeGenerationType="class">
+        <attribute name="bought" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="share" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Share" inverseName="portfolio" inverseEntity="Share"/>
+    </entity>
+    <entity name="Quote" representedClassName="Quote" syncable="YES" codeGenerationType="class">
+        <attribute name="closePrice" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="volume" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="share" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Share" inverseName="quotes" inverseEntity="Share"/>
+    </entity>
+    <entity name="ReferenceShare" representedClassName="ReferenceShare" syncable="YES" codeGenerationType="class">
+        <attribute name="enabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="generated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="iexID" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="ticker" optional="YES" attributeType="String"/>
+        <attribute name="typeCode" optional="YES" attributeType="String"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country"/>
+        <relationship name="stock" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stock"/>
+    </entity>
+    <entity name="Sector" representedClassName="Sector" syncable="YES" codeGenerationType="class">
+        <attribute name="explanation" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="company" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Share" inverseName="sector" inverseEntity="Share"/>
+    </entity>
+    <entity name="Share" representedClassName="Share" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="ceo" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="companyName" optional="YES" attributeType="String"/>
+        <attribute name="employes" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iexID" optional="YES" attributeType="String"/>
+        <attribute name="logoIcon" optional="YES" attributeType="String"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="securityName" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="ticker" optional="YES" attributeType="String"/>
+        <attribute name="website" optional="YES" attributeType="String"/>
+        <attribute name="zip" optional="YES" attributeType="String"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="companies" inverseEntity="Country"/>
+        <relationship name="industry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CompanyIndustry" inverseName="company" inverseEntity="CompanyIndustry"/>
+        <relationship name="news" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="News" inverseName="tickers" inverseEntity="News"/>
+        <relationship name="portfolio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Portfolio" inverseName="share" inverseEntity="Portfolio"/>
+        <relationship name="quotes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Quote" inverseName="share" inverseEntity="Quote"/>
+        <relationship name="sector" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Sector" inverseName="company" inverseEntity="Sector"/>
+        <relationship name="shareTags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ShareTags" inverseName="share" inverseEntity="ShareTags"/>
+        <relationship name="stock" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stock" inverseName="shares" inverseEntity="Stock"/>
+    </entity>
+    <entity name="ShareTags" representedClassName="ShareTags" syncable="YES" codeGenerationType="class">
+        <relationship name="share" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Share" inverseName="shareTags" inverseEntity="Share"/>
+        <relationship name="tag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tag" inverseName="shareTags" inverseEntity="Tag"/>
+    </entity>
+    <entity name="Stock" representedClassName="Stock" syncable="YES" codeGenerationType="class">
+        <attribute name="stockName" optional="YES" attributeType="String"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="stocks" inverseEntity="Country"/>
+        <relationship name="shares" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Share" inverseName="stock" inverseEntity="Share"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES" codeGenerationType="class">
+        <attribute name="explanation" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="shareTags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ShareTags" inverseName="tag" inverseEntity="ShareTags"/>
+    </entity>
+    <elements>
+        <element name="Quote" positionX="-132.7576904296875" positionY="258.0916137695312" width="128" height="103"/>
+        <element name="Share" positionX="-473.4124755859375" positionY="100.0578308105469" width="128" height="373"/>
+        <element name="Portfolio" positionX="-49.40350341796875" positionY="-16.21664428710938" width="128" height="118"/>
+        <element name="Tag" positionX="-98.0885009765625" positionY="519.3066711425781" width="128" height="88"/>
+        <element name="CompanyIndustry" positionX="-279.391357421875" positionY="236.10888671875" width="128" height="73"/>
+        <element name="Country" positionX="-640.6188354492188" positionY="124.9502258300781" width="128" height="133"/>
+        <element name="Sector" positionX="-664.6455688476562" positionY="342.3096008300781" width="128" height="88"/>
+        <element name="ShareTags" positionX="-286.13330078125" positionY="461.5212097167969" width="128" height="73"/>
+        <element name="News" positionX="20.8638916015625" positionY="286.1873474121094" width="128" height="178"/>
+        <element name="ReferenceShare" positionX="-838.795654296875" positionY="56.71551513671875" width="128" height="163"/>
+        <element name="Stock" positionX="-840.3427124023438" positionY="371.5737915039062" width="128" height="88"/>
+    </elements>
+</model>
