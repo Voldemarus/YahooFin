@@ -7,6 +7,7 @@
 //
 
 #import "DAO.h"
+#import "IEXService.h"
 
 @interface DAO () {
     NSPersistentStoreCoordinator *_persistentStoreCoordinator;
@@ -31,7 +32,7 @@
 
 - (id) init {
     if (self = [super init]) {
-
+        
     }
     return self;
 }
@@ -65,6 +66,92 @@
 {
     return [[self securityTypeDict] objectForKey:aCode];
 }
+
+
+
+#pragma mark - Creation/update of the entitirs
+
+
+- (Sector *) sectorForData:(NSDictionary *) aData
+{
+    Sector *s = [Sector getSector:aData forMoc:self.moc];
+    if (!s) {
+        s = [Sector createNewSecotrForData:aData forMoc:self.moc];
+
+    }
+    return s;
+}
+
+- (NSInteger) sectorsCount
+{
+    return [Sector recordsCountForMoc:self.moc];
+}
+
+- (NSArray <Sector *> *) sectorNames
+{
+    return [Sector sortedSectorNamesInMoc:self.moc];
+}
+
+- (Tag *) tagForData:(NSDictionary *) aData
+{
+    Tag *s = [Tag getTag:aData forMoc:self.moc];
+    if (!s) {
+        s = [Tag createNewTagForData:aData forMoc:self.moc];
+
+    }
+    return s;
+}
+
+- (NSInteger) tagsCount
+{
+    return [Tag recordsCountForMoc:self.moc];
+}
+
+- (NSArray <Tag *> *) tagNames
+{
+    return [Tag sortedTagNamesInMoc:self.moc];
+}
+
+- (Stock *) stockForData:(NSDictionary *) aData
+{
+    Stock *s = [Stock getStock:aData forMoc:self.moc];
+    if (!s) {
+        s = [Stock createNewStockForData:aData forMoc:self.moc];
+
+    }
+    return s;
+}
+
+- (NSInteger) stocksCount
+{
+    return [Stock recordsCountForMoc:self.moc];
+}
+
+- (NSArray <Stock *> *) stockNames
+{
+    return [Stock sortedStockNamesInMoc:self.moc];
+}
+
+- (ReferenceShare *) refShareForData:(NSDictionary *) aData
+{
+    ReferenceShare *s = [ReferenceShare getShare:aData forMoc:self.moc];
+    if (!s) {
+        s = [ReferenceShare createNewShareForData:aData forMoc:self.moc];
+
+    }
+    return s;
+}
+
+- (NSInteger) refSharesCount
+{
+    return [ReferenceShare recordsCountForMoc:self.moc];
+}
+
+- (NSArray <ReferenceShare *> *) refSharesTickers
+{
+    return [ReferenceShare sortedShareTickerInMoc:self.moc];
+}
+
 
 
 #pragma mark - Core Data stack

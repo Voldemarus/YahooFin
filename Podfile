@@ -6,5 +6,5 @@ target 'SmartPortfolio' do
 #  use_frameworks!
 
   # Pods for SmartPortfolio
-	pod 'Unirest', '~> 1.1.4'
+# pod 'Unirest', '~> 1.1.4'
 end

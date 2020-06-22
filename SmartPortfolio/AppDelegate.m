@@ -31,8 +31,7 @@
    // [fs getMarketSummaries];
 
     IEXService *srv  = [IEXService sharedInstanceWithToken:IEX_SANDBOX_TOKEN forSandbox:YES];
-    [srv requestCompanyInfoForTicker:@"APA"];
-
+    [srv requestStockRefData];
     
     return YES;
 }

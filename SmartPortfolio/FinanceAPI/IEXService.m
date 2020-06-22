@@ -6,6 +6,18 @@
 //
 
 #import "IEXService.h"
+#import "DAO.h"
+
+NSString * const IEXSERVICE_REF_SECTOR_REQUESTED    =   @"VVV_IEX_SECTOR_REQUEST";
+NSString * const IEXSERVICE_REF_SECTOR_RECEIVED     =   @"VVV_IEX_SECTOR_RECEIVED";
+NSString * const IEXSERVICE_REF_TAG_REQUESTED       =   @"VVV_IEX_TAG_REQUEST";
+NSString * const IEXSERVICE_REF_TAG_RECEIVED        =   @"VVV_IEX_TAG_RECEIVED";
+NSString * const IEXSERVICE_REF_TICKER_REQUESTED    =   @"VVV_IEX_TICK_REQUEST";
+NSString * const IEXSERVICE_REF_TICJER_RECEIVED     =   @"VVV_IEX_TICK_RECEIVED";
+NSString * const IEXSERVICE_REF_STOCK_REQUESTED     =   @"VVV_IEX_STOCK_REQUEST";
+NSString * const IEXSERVICE_REF_STOCK_RECEIVED      =   @"VVV_IEX_STOCK_RECEIVED";
+NSString * const IEXSERVICE_REF_SHARE_REQUESTED     =   @"VVV_IEX_SHARE_REQUEST";
+NSString * const IEXSERVICE_REF_SHARE_RECEIVED      =   @"VVV_IEX_SHARE_RECEIVED";
 
 
 NSString * const STOCK_QUOTE_TEMPLATE   =   @"/stock/%@/quote";
@@ -35,6 +47,8 @@ typedef NS_ENUM(NSInteger, RequestType) {
 {
     BOOL _sandbox;
     NSString *token;
+    DAO *dao;
+   NSNotificationCenter *nc;
 }
 
 @end
@@ -56,6 +70,19 @@ typedef NS_ENUM(NSInteger, RequestType) {
     if (self = [super init]) {
         _sandbox = sandbox;
         token = aToken;
+        dao = [DAO sharedInstance];
+        nc = [NSNotificationCenter defaultCenter];
+        [nc addObserver:self selector:@selector(initialReferenceDateLoading:) name:IEXSERVICE_REF_SECTOR_RECEIVED object:self];
+        [nc addObserver:self selector:@selector(initialReferenceDateLoading:) name:IEXSERVICE_REF_TAG_RECEIVED object:self];
+        //
+        // Load reference data if required
+        //
+        if ([dao sectorsCount] <= 0) {
+            [self requestSectorRefData];
+        }
+        else if ([dao tagsCount] <= 0) {
+            [self requestTagsRefData];
+        }
     }
     return self;
 }
@@ -66,24 +93,28 @@ typedef NS_ENUM(NSInteger, RequestType) {
 - (void) requestStockRefData
 {
     NSString *urlString = [self getReuestStringForRequest:REF_DATA_STOCK withParams:nil];
+    [nc postNotificationName:IEXSERVICE_REF_STOCK_REQUESTED object:nil];
     [self spawnRequest:urlString withID:RequestRefDatExchange forTicker:nil];
 }
 
 - (void) requestTagsRefData
 {
     NSString *urlString = [self getReuestStringForRequest:REF_DATA_TAGS withParams:nil];
+     [nc postNotificationName:IEXSERVICE_REF_TAG_REQUESTED object:nil];
     [self spawnRequest:urlString withID:RequestRefDataTags forTicker:nil];
 }
 
 - (void) requestSharesRefData
 {
     NSString *urlString = [self getReuestStringForRequest:REF_DATA_TICKERS withParams:nil];
+    [nc postNotificationName:IEXSERVICE_REF_SHARE_REQUESTED object:nil];
     [self spawnRequest:urlString withID:RequestTypeRefDataTickers forTicker:nil];
 }
 
 - (void) requestSectorRefData
 {
     NSString *urlString = [self getReuestStringForRequest:REF_DATA_SECTOR withParams:nil];
+    [nc postNotificationName:IEXSERVICE_REF_SECTOR_REQUESTED object:nil];
     [self spawnRequest:urlString withID:RequestRefDataSectors forTicker:nil];
 }
 
@@ -157,7 +188,7 @@ typedef NS_ENUM(NSInteger, RequestType) {
             NSLog(@"%@", error);
         } else {
             NSError *parseError = nil;
-            NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:0 error:&parseError];
+            id result = [NSJSONSerialization JSONObjectWithData:data options:0 error:&parseError];
             if (error) {
                 NSLog(@"Cannot parse incoming result - %@", [error localizedDescription]);
             } else {
@@ -201,23 +232,82 @@ typedef NS_ENUM(NSInteger, RequestType) {
 
 - (void) getAndLoadTagsRefData:(NSDictionary *) data
 {
-
+    for (NSDictionary *d in data) {
+        Tag *tag = [dao tagForData:d];
+#ifdef DEBUG
+        NSLog(@"Tag - %@", tag);
+#endif
+    }
+    [dao saveContext];
+    [nc postNotificationName:IEXSERVICE_REF_TAG_RECEIVED object:@2];
 }
 
 - (void) getAndLoadTickerRefData:(NSDictionary *) data
 {
-
+    for (NSDictionary *d in data) {
+        Stock *stock = [dao stockForData:d];
+#ifdef DEBUG
+        NSLog(@"Stock - %@", stock);
+#endif
+    }
+    [dao saveContext];
+    [nc postNotificationName:IEXSERVICE_REF_SHARE_RECEIVED object:@4];
 }
 
 - (void) getAndLoadStockRefData:(NSDictionary *) data
 {
-
+    for (NSDictionary *d in data) {
+        Stock *stock = [dao stockForData:d];
+#ifdef DEBUG
+        NSLog(@"Stock - %@", stock);
+#endif
+    }
+    [dao saveContext];
+    [nc postNotificationName:IEXSERVICE_REF_STOCK_RECEIVED object:@3];
 }
 
-- (void) getAndLoadSectorsRefData:(NSDictionary *) data
+- (void) getAndLoadSectorsRefData:(NSArray *) data
 {
-
+    for (NSDictionary *d in data) {
+        Sector *sector = [dao sectorForData:d];
+#ifdef DEBUG
+        NSLog(@"Sector - %@", sector);
+#endif
+    }
+    [dao saveContext];
+    [nc postNotificationName:IEXSERVICE_REF_SECTOR_RECEIVED object:@1];
 }
 
+- (void) initialReferenceDateLoading:(NSNotification *)note
+{
+    NSInteger code = [[note object] integerValue];
+    if (code == 1) {
+        // sectors were processed
+        if ([dao tagsCount] <= 0) {
+            [self requestTagsRefData];
+            return;
+        } else {
+            code = 3;
+        }
+    }
+    if (code == 2) {
+        // tags were processed
+        if ([dao stocksCount] <= 0) {
+            [self requestStockRefData];
+            return;
+        } else {
+            code = 4;
+        }
+    }
+    if (code == 3) {
+        // stocks were procesed
+        if ([dao refSharesCount] <= 0) {
+            [self requestSharesRefData];
+            return;
+        } else {
+            code = 5;
+        }
+    }
+}
 
 @end
