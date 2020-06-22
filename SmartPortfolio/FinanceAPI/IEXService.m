@@ -72,8 +72,10 @@ typedef NS_ENUM(NSInteger, RequestType) {
         token = aToken;
         dao = [DAO sharedInstance];
         nc = [NSNotificationCenter defaultCenter];
-        [nc addObserver:self selector:@selector(initialReferenceDateLoading:) name:IEXSERVICE_REF_SECTOR_RECEIVED object:self];
-        [nc addObserver:self selector:@selector(initialReferenceDateLoading:) name:IEXSERVICE_REF_TAG_RECEIVED object:self];
+        [nc addObserver:self selector:@selector(initialReferenceDateLoading:) name:IEXSERVICE_REF_SECTOR_RECEIVED object:nil];
+        [nc addObserver:self selector:@selector(initialReferenceDateLoading:) name:IEXSERVICE_REF_TAG_RECEIVED object:nil];
+        [nc addObserver:self selector:@selector(initialReferenceDateLoading:) name:IEXSERVICE_REF_STOCK_RECEIVED object:nil];
+        [nc addObserver:self selector:@selector(initialReferenceDateLoading:) name:IEXSERVICE_REF_SHARE_RECEIVED object:nil];
         //
         // Load reference data if required
         //

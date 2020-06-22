@@ -39,11 +39,29 @@
     return nil;
 }
 
++ (Stock *) getStockForCode:(NSString *)aCode inMoc:(NSManagedObjectContext *)moc
+{
+    NSFetchRequest *req = [Stock fetchRequest];
+    req.predicate = [NSPredicate predicateWithFormat:@"stockName like [cd] %@", aCode];
+    NSError *error = nil;
+    NSArray <Stock *> *result = [moc executeFetchRequest:req error:&error];
+    if (!result && error) {
+        NSLog(@"Cannot fetch from %@ for %@ --> %@",[self class], aCode, [error localizedDescription]);
+        return nil;
+    } else if (result.count == 0) {
+        return nil;
+    } else {
+        return result[0];
+    }
+}
+
+
 + (Stock *) createNewStockForData:(NSDictionary *)aData forMoc:(NSManagedObjectContext *)moc
 {
-    NSString *reqTerm = aData[@"stockName"];
+    NSString *reqTerm = aData[@"exchange"];
     Stock *newRec = [NSEntityDescription insertNewObjectForEntityForName:[[self class] description]
                                                    inManagedObjectContext:moc];
+    NSLog(@"entry - %@",aData);
     if (newRec) {
         newRec.stockName = reqTerm;
         newRec.explanation = aData[@"description"];

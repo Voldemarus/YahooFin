@@ -8,6 +8,7 @@
 
 #import "ReferenceShare+CoreDataClass.h"
 #import "Country+CoreDataClass.h"
+#import "Stock+CoreDataClass.h"
 
 @implementation ReferenceShare
 
@@ -47,20 +48,36 @@
     return nil;
 }
 
+/*
+ {
+ cik = 8334;
+ currency = USD;
+ date = "2020-06-22";
+ exchange = SAN;
+ figi = 4X0BBGB0092B;
+ iexId = "IEX_5737584C53442D52";
+ isEnabled = 1;
+ name = " ecoatroitcaAnnioiaClArtmp nr";
+ region = US;
+ symbol = AAME;
+ type = cs;
+ },
+ */
+
 + (ReferenceShare *) createNewShareForData:(NSDictionary *)aData forMoc:(NSManagedObjectContext *)moc
 {
-    NSString *reqTerm = aData[@"ticker"];
+    NSString *reqTerm = aData[@"iexId"];
     ReferenceShare *newRec = [NSEntityDescription insertNewObjectForEntityForName:[[self class] description]
                                                   inManagedObjectContext:moc];
     if (newRec) {
-        newRec.ticker = reqTerm;
+        newRec.iexID= reqTerm;
+        newRec.ticker = aData[@"symbol"];
         newRec.name = aData[@"name"];
         NSString *dateStr = aData[@"date"];
         NSDateFormatter *df = [[NSDateFormatter alloc] init];
         [df setDateFormat:@"YYYY-MM-DD"];
         NSDate *d = [df dateFromString:dateStr];
         newRec.generated = (d ? d : [NSDate date]);
-        newRec.iexID = aData[@"iexId"];
         newRec.typeCode = aData[@"type"];
         newRec.enabled = [aData[@"isEnabled"] isEqualToString:@"true"];
         NSString *countryCode = aData[@"region"];
@@ -69,6 +86,11 @@
             c = [Country createNewCountryForshortName:countryCode forMoc:moc];
         }
         newRec.country = c;
+        NSString *exchangeCode = aData[@"exchange"];
+        if (exchangeCode) {
+            Stock *s = [Stock getStockForCode:exchangeCode inMoc:moc];
+            newRec.stock = s;
+        }
     }
     return newRec;
 }

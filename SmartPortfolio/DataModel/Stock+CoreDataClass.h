@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray <Stock *> *) sortedStockNamesInMoc:(NSManagedObjectContext *) moc;
 
 
++ (Stock *) getStockForCode:(NSString *)aCode inMoc:(NSManagedObjectContext *)moc;
+
 @end
 
 NS_ASSUME_NONNULL_END
