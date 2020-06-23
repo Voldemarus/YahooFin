@@ -93,7 +93,9 @@
     } else {
         // leave recursion, if all reference data loaded
         srv.referenceDelegate = nil;
-        [self.view removeFromSuperview];
+        dispatch_async(dispatch_get_main_queue(), ^{
+             [self.view removeFromSuperview];
+        });
     }
 }
 
@@ -149,16 +151,13 @@
         });
          if ([notifier isEqualToString:IEXSERVICE_REF_TAG_RECEIVED]) {
             Tag *tag = [dao tagForData:d];
-            DLog(@"%@",tag);
         } else if ([notifier isEqualToString:IEXSERVICE_REF_SECTOR_RECEIVED]) {
             Sector *sector = [dao sectorForData:d];
-            DLog(@"%@",sector);
-        } else if ([notifier isEqualToString:IEXSERVICE_REF_SHARE_RECEIVED]) {
+         } else if ([notifier isEqualToString:IEXSERVICE_REF_SHARE_RECEIVED]) {
             ReferenceShare *s = [dao refShareForData:d];
-            DLog(@"%@",s);
-        } else if ([notifier isEqualToString:IEXSERVICE_REF_STOCK_RECEIVED]) {
+         } else if ([notifier isEqualToString:IEXSERVICE_REF_STOCK_RECEIVED]) {
             Stock *stock = [dao stockForData:d];
-            DLog(@"%@",stock);
+
         }
     }
     [dao saveContext];

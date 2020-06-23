@@ -69,8 +69,7 @@
     NSString *reqTerm = aData[@"iexId"];
     ReferenceShare *newRec = [NSEntityDescription insertNewObjectForEntityForName:[[self class] description]
                                                   inManagedObjectContext:moc];
-    NSLog(@"data - %@",aData);
-    if (newRec) {
+     if (newRec) {
         newRec.iexID= reqTerm;
         newRec.ticker = aData[@"symbol"];
         newRec.name = aData[@"name"];

@@ -76,7 +76,7 @@
 {
     Sector *s = [Sector getSector:aData forMoc:self.moc];
     if (!s) {
-        s = [Sector createNewSecotrForData:aData forMoc:self.moc];
+        s = [Sector createNewSecotrForData:aData forMoc:self.storeMoc];
 
     }
     return s;
@@ -96,7 +96,7 @@
 {
     Tag *s = [Tag getTag:aData forMoc:self.moc];
     if (!s) {
-        s = [Tag createNewTagForData:aData forMoc:self.moc];
+        s = [Tag createNewTagForData:aData forMoc:self.storeMoc];
 
     }
     return s;
@@ -116,7 +116,7 @@
 {
     Stock *s = [Stock getStock:aData forMoc:self.moc];
     if (!s) {
-        s = [Stock createNewStockForData:aData forMoc:self.moc];
+        s = [Stock createNewStockForData:aData forMoc:self.storeMoc];
 
     }
     return s;
@@ -136,7 +136,7 @@
 {
     ReferenceShare *s = [ReferenceShare getShare:aData forMoc:self.moc];
     if (!s) {
-        s = [ReferenceShare createNewShareForData:aData forMoc:self.moc];
+        s = [ReferenceShare createNewShareForData:aData forMoc:self.storeMoc];
 
     }
     return s;
