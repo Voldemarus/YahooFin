@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ReferenceLoaderVCViewController.h"
+#import "DAO.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if ([[DAO sharedInstance] referenceDataNotFilled]) {
+        ReferenceLoaderVCViewController *rlvc = [[ReferenceLoaderVCViewController alloc] init];
+        if (rlvc) {
+            [self.view addSubview:rlvc.view];
+            [rlvc loadReferenceData];
+
+        }
+    }
+
 }
 
 

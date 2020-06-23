@@ -37,6 +37,11 @@
                                                    inManagedObjectContext:moc];
     if (newRec) {
         newRec.name = reqTerm;
+        NSError *error = nil;
+        [moc save:&error];
+        if (error) {
+            NSLog(@"Tag : cannot save context !");
+        }
     }
     return newRec;
 }

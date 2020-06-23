@@ -152,6 +152,14 @@
     return [ReferenceShare sortedShareTickerInMoc:self.moc];
 }
 
+- (BOOL) referenceDataNotFilled
+{
+    if ([self stocksCount] <= 0 || [self sectorsCount] <= 0 ||
+        [self tagsCount] <= 0 ||  [self refSharesCount] <= 0) {
+        return YES;
+    }
+    return NO;
+}
 
 
 #pragma mark - Core Data stack

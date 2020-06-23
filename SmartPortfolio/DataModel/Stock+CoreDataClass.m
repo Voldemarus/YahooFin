@@ -74,6 +74,11 @@
             c = [Country createNewCountryForshortName:countryCode forMoc:moc];
         }
         newRec.country = c;
+        NSError *error = nil;
+        [moc save:&error];
+        if (error) {
+            NSLog(@"Stock : cannot save context !");
+        }
     }
     return newRec;
 }

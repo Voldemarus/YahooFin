@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B59449D24A20AF20015D7FF /* ReferenceLoaderVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59449B24A20AF20015D7FF /* ReferenceLoaderVCViewController.m */; };
+		1B59449E24A20AF20015D7FF /* ReferenceLoaderVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B59449C24A20AF20015D7FF /* ReferenceLoaderVCViewController.xib */; };
+		1B5944A424A212240015D7FF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5944A324A212240015D7FF /* Reachability.m */; };
 		1BD3B7CA249F9178008C5FB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7C9249F9178008C5FB3 /* AppDelegate.m */; };
 		1BD3B7CD249F9178008C5FB3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7CC249F9178008C5FB3 /* SceneDelegate.m */; };
 		1BD3B7D0249F9178008C5FB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7CF249F9178008C5FB3 /* ViewController.m */; };
@@ -15,7 +18,6 @@
 		1BD3B7D8249F9180008C5FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD3B7D7249F9180008C5FB3 /* Assets.xcassets */; };
 		1BD3B7DB249F9180008C5FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD3B7D9249F9180008C5FB3 /* LaunchScreen.storyboard */; };
 		1BD3B7DE249F9180008C5FB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7DD249F9180008C5FB3 /* main.m */; };
-		1BD3B7E7249F9495008C5FB3 /* YahooFinService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7E6249F9495008C5FB3 /* YahooFinService.m */; };
 		1BD3B7EC24A07324008C5FB3 /* IEXService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7EA24A07324008C5FB3 /* IEXService.m */; };
 		1BD3B7F024A08789008C5FB3 /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7EF24A08789008C5FB3 /* DAO.m */; };
 		1BD3B81D24A0AEF1008C5FB3 /* CompanyIndustry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B80424A0AEEF008C5FB3 /* CompanyIndustry+CoreDataProperties.m */; };
@@ -292,6 +294,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B59449A24A20AF20015D7FF /* ReferenceLoaderVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReferenceLoaderVCViewController.h; sourceTree = "<group>"; };
+		1B59449B24A20AF20015D7FF /* ReferenceLoaderVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReferenceLoaderVCViewController.m; sourceTree = "<group>"; };
+		1B59449C24A20AF20015D7FF /* ReferenceLoaderVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReferenceLoaderVCViewController.xib; sourceTree = "<group>"; };
+		1B5944A024A2120E0015D7FF /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		1B5944A224A212240015D7FF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1B5944A324A212240015D7FF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		1BD3B7C5249F9178008C5FB3 /* SmartPortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD3B7C8249F9178008C5FB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1BD3B7C9249F9178008C5FB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -622,6 +630,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B59449924A20ACA0015D7FF /* ReferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				1B59449A24A20AF20015D7FF /* ReferenceLoaderVCViewController.h */,
+				1B59449B24A20AF20015D7FF /* ReferenceLoaderVCViewController.m */,
+				1B59449C24A20AF20015D7FF /* ReferenceLoaderVCViewController.xib */,
+			);
+			path = ReferenceLoader;
+			sourceTree = "<group>";
+		};
+		1B59449F24A211FE0015D7FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1B5944A124A212130015D7FF /* Reachability */,
+				1B5944A024A2120E0015D7FF /* Utility.h */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1B5944A124A212130015D7FF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				1B5944A224A212240015D7FF /* Reachability.h */,
+				1B5944A324A212240015D7FF /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		1BD3B7BC249F9178008C5FB3 = {
 			isa = PBXGroup;
 			children = (
@@ -643,6 +679,7 @@
 		1BD3B7C7249F9178008C5FB3 /* SmartPortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				1B59449F24A211FE0015D7FF /* Components */,
 				1BD3B83324A0D8F4008C5FB3 /* CountryInfo */,
 				1BD3B7ED24A07F3E008C5FB3 /* DataModel */,
 				1BD3B7E4249F946E008C5FB3 /* FinanceAPI */,
@@ -665,6 +702,7 @@
 		1BD3B7E4249F946E008C5FB3 /* FinanceAPI */ = {
 			isa = PBXGroup;
 			children = (
+				1B59449924A20ACA0015D7FF /* ReferenceLoader */,
 				1BD3B7EB24A07324008C5FB3 /* IEXService.h */,
 				1BD3B7EA24A07324008C5FB3 /* IEXService.m */,
 				1BD3B7E5249F9495008C5FB3 /* YahooFinService.h */,
@@ -1177,6 +1215,7 @@
 				1BD3B9CD24A0D961008C5FB3 /* uruguay.png in Resources */,
 				1BD3BA0D24A0D961008C5FB3 /* grenada.png in Resources */,
 				1BD3BA0424A0D961008C5FB3 /* mexico.png in Resources */,
+				1B59449E24A20AF20015D7FF /* ReferenceLoaderVCViewController.xib in Resources */,
 				1BD3BA0524A0D961008C5FB3 /* western_samoa.png in Resources */,
 				1BD3B9D024A0D961008C5FB3 /* san_marino.png in Resources */,
 				1BD3B96824A0D961008C5FB3 /* jersey.png in Resources */,
@@ -1373,11 +1412,12 @@
 				1BD3B7CA249F9178008C5FB3 /* AppDelegate.m in Sources */,
 				1BD3B81D24A0AEF1008C5FB3 /* CompanyIndustry+CoreDataProperties.m in Sources */,
 				1BD3B82424A0AEF1008C5FB3 /* News+CoreDataProperties.m in Sources */,
+				1B59449D24A20AF20015D7FF /* ReferenceLoaderVCViewController.m in Sources */,
 				1BD3B82524A0AEF1008C5FB3 /* Tag+CoreDataClass.m in Sources */,
 				1BD3B82D24A0AEF1008C5FB3 /* ShareTags+CoreDataProperties.m in Sources */,
 				1BD3B82C24A0AEF1008C5FB3 /* Quote+CoreDataClass.m in Sources */,
+				1B5944A424A212240015D7FF /* Reachability.m in Sources */,
 				1BD3B82A24A0AEF1008C5FB3 /* Stock+CoreDataClass.m in Sources */,
-				1BD3B7E7249F9495008C5FB3 /* YahooFinService.m in Sources */,
 				1BD3B82124A0AEF1008C5FB3 /* News+CoreDataClass.m in Sources */,
 				1BD3B83224A0AEF1008C5FB3 /* Share+CoreDataClass.m in Sources */,
 				1BD3B7CD249F9178008C5FB3 /* SceneDelegate.m in Sources */,

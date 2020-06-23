@@ -10,6 +10,7 @@
 // #import "YahooFinService.h"
 #import "IEXService.h"
 
+
 #import "Definitions.h"
 
 // NSString * const API_KEY    =   @"70ee8bfcb9msh39765d31b38ef39p17b092jsn7505f33368a8";
@@ -30,9 +31,12 @@
 //    [fs getQuotesForShares:tickersList];
    // [fs getMarketSummaries];
 
-    IEXService *srv  = [IEXService sharedInstanceWithToken:IEX_SANDBOX_TOKEN forSandbox:YES];
-    [srv requestStockRefData];
-    
+    IEXService *srv  = [IEXService sharedInstance];
+    srv.token = IEX_SANDBOX_TOKEN;
+    srv.sandbox = YES;
+
+
+ 
     return YES;
 }
 

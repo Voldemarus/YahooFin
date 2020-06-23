@@ -42,6 +42,11 @@
                 inManagedObjectContext:moc];
     if (newRec) {
         newRec.name = reqTerm;
+        NSError *error = nil;
+        [moc save:&error];
+        if (error) {
+            NSLog(@"Sector : cannot save context !");
+        }
     }
     return newRec;
 }

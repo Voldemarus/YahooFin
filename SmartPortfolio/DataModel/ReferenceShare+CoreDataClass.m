@@ -69,6 +69,7 @@
     NSString *reqTerm = aData[@"iexId"];
     ReferenceShare *newRec = [NSEntityDescription insertNewObjectForEntityForName:[[self class] description]
                                                   inManagedObjectContext:moc];
+    NSLog(@"data - %@",aData);
     if (newRec) {
         newRec.iexID= reqTerm;
         newRec.ticker = aData[@"symbol"];
@@ -79,7 +80,7 @@
         NSDate *d = [df dateFromString:dateStr];
         newRec.generated = (d ? d : [NSDate date]);
         newRec.typeCode = aData[@"type"];
-        newRec.enabled = [aData[@"isEnabled"] isEqualToString:@"true"];
+        newRec.enabled = [aData[@"isEnabled"] boolValue];
         NSString *countryCode = aData[@"region"];
         Country *c  = [Country getcountry:countryCode forMoc:moc];
         if (!c) {
@@ -90,6 +91,11 @@
         if (exchangeCode) {
             Stock *s = [Stock getStockForCode:exchangeCode inMoc:moc];
             newRec.stock = s;
+        }
+        NSError *error = nil;
+        [moc save:&error];
+        if (error) {
+            NSLog(@"ReferenceShare : cannot save context !");
         }
     }
     return newRec;

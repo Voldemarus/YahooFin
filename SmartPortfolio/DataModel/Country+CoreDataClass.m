@@ -47,6 +47,11 @@
     if (newRec) {
         newRec.shortName = shortName;
         newRec.fullName = [[CountryInfo sharedInstance] countryNameForCode:shortName];
+        NSError *error = nil;
+        [moc save:&error];
+        if (error) {
+            NSLog(@"Country : cannot save context !");
+        }
      }
     return newRec;
 }

@@ -57,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSInteger) refSharesCount;
 - (NSArray <ReferenceShare *> *) refSharesTickers;     // sorted by tickers
 
-
+- (BOOL) referenceDataNotFilled;
 
 
 @end
