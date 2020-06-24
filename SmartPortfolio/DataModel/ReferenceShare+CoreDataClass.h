@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (ReferenceShare *) createNewShareForData:(NSDictionary *)aData forMoc:(NSManagedObjectContext *)moc;
 
 + (NSArray <ReferenceShare *> *) sortedShareTickerInMoc:(NSManagedObjectContext *) moc;
-
++ (NSArray <ReferenceShare *> *) sortedShareNamesInMoc:(NSManagedObjectContext *) moc;
 
 @end
 

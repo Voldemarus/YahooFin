@@ -112,7 +112,20 @@
     return res;
 }
 
-+ (NSArray <ReferenceShare *> *) sortedStockNamesInMoc:(NSManagedObjectContext *) moc
++ (NSArray <ReferenceShare *> *) sortedShareNamesInMoc:(NSManagedObjectContext *) moc
+{
+    NSFetchRequest *req = [ReferenceShare fetchRequest];
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]];
+    NSError *error = nil;
+    NSArray <ReferenceShare *> *res = [moc executeFetchRequest:req error:&error];
+    if (!res && error) {
+        NSLog(@"Cannot fetch from %@ --> %@",[self class], [error localizedDescription]);
+        return nil;
+    }
+    return res;
+}
+
+ + (NSArray <ReferenceShare *> *) sortedShareTickerInMoc:(NSManagedObjectContext *) moc
 {
     NSFetchRequest *req = [ReferenceShare fetchRequest];
     req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"ticker" ascending:YES]];

@@ -191,13 +191,16 @@
         });
          if ([notifier isEqualToString:IEXSERVICE_REF_TAG_RECEIVED]) {
             Tag *tag = [dao tagForData:d];
+#pragma unused(tag)
         } else if ([notifier isEqualToString:IEXSERVICE_REF_SECTOR_RECEIVED]) {
             Sector *sector = [dao sectorForData:d];
+#pragma unused(sector)
          } else if ([notifier isEqualToString:IEXSERVICE_REF_SHARE_RECEIVED]) {
             ReferenceShare *s = [dao refShareForData:d];
+#pragma unused(s)
          } else if ([notifier isEqualToString:IEXSERVICE_REF_STOCK_RECEIVED]) {
             Stock *stock = [dao stockForData:d];
-
+#pragma unused(stock)
         }
     }
     [dao saveContext];

@@ -3,13 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1B59449D24A20AF20015D7FF /* ReferenceLoaderVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B59449B24A20AF20015D7FF /* ReferenceLoaderVCViewController.m */; };
 		1B59449E24A20AF20015D7FF /* ReferenceLoaderVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B59449C24A20AF20015D7FF /* ReferenceLoaderVCViewController.xib */; };
 		1B5944A424A212240015D7FF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5944A324A212240015D7FF /* Reachability.m */; };
+		1B5944B624A367C10015D7FF /* GMTabsViewAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B5944B124A367C10015D7FF /* GMTabsViewAsset.xcassets */; };
+		1B5944B724A367C10015D7FF /* GMTabsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5944B324A367C10015D7FF /* GMTabsView.m */; };
+		1B5944B824A367C10015D7FF /* GMTabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5944B424A367C10015D7FF /* GMTabsViewController.m */; };
+		1B5944B924A367C10015D7FF /* GMTabItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5944B524A367C10015D7FF /* GMTabItemViewController.m */; };
+		1B5944BF24A36DE60015D7FF /* GMGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5944BE24A36DE60015D7FF /* GMGradient.m */; };
+		1B5944C324A375FE0015D7FF /* UIColor+ColorHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5944C224A375FE0015D7FF /* UIColor+ColorHex.m */; };
+		1B5944C424A37D560015D7FF /* GMMenuCircularButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5944BB24A36AD70015D7FF /* GMMenuCircularButton.m */; };
+		1B5944C724A380BE0015D7FF /* UIButton+Animate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5944C624A380BE0015D7FF /* UIButton+Animate.m */; };
 		1BD3B7CA249F9178008C5FB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7C9249F9178008C5FB3 /* AppDelegate.m */; };
 		1BD3B7CD249F9178008C5FB3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7CC249F9178008C5FB3 /* SceneDelegate.m */; };
 		1BD3B7D0249F9178008C5FB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7CF249F9178008C5FB3 /* ViewController.m */; };
@@ -300,6 +308,21 @@
 		1B5944A024A2120E0015D7FF /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		1B5944A224A212240015D7FF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		1B5944A324A212240015D7FF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1B5944AF24A367C10015D7FF /* GMTabItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMTabItemViewController.h; sourceTree = "<group>"; };
+		1B5944B024A367C10015D7FF /* GMTabsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMTabsView.h; sourceTree = "<group>"; };
+		1B5944B124A367C10015D7FF /* GMTabsViewAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GMTabsViewAsset.xcassets; sourceTree = "<group>"; };
+		1B5944B224A367C10015D7FF /* GMTabsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMTabsViewController.h; sourceTree = "<group>"; };
+		1B5944B324A367C10015D7FF /* GMTabsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMTabsView.m; sourceTree = "<group>"; };
+		1B5944B424A367C10015D7FF /* GMTabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMTabsViewController.m; sourceTree = "<group>"; };
+		1B5944B524A367C10015D7FF /* GMTabItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMTabItemViewController.m; sourceTree = "<group>"; };
+		1B5944BA24A36AD70015D7FF /* GMMenuCircularButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMMenuCircularButton.h; sourceTree = "<group>"; };
+		1B5944BB24A36AD70015D7FF /* GMMenuCircularButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMMenuCircularButton.m; sourceTree = "<group>"; };
+		1B5944BD24A36DE60015D7FF /* GMGradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMGradient.h; sourceTree = "<group>"; };
+		1B5944BE24A36DE60015D7FF /* GMGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMGradient.m; sourceTree = "<group>"; };
+		1B5944C124A375FE0015D7FF /* UIColor+ColorHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorHex.h"; sourceTree = "<group>"; };
+		1B5944C224A375FE0015D7FF /* UIColor+ColorHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorHex.m"; sourceTree = "<group>"; };
+		1B5944C524A380BE0015D7FF /* UIButton+Animate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Animate.h"; sourceTree = "<group>"; };
+		1B5944C624A380BE0015D7FF /* UIButton+Animate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Animate.m"; sourceTree = "<group>"; };
 		1BD3B7C5249F9178008C5FB3 /* SmartPortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartPortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD3B7C8249F9178008C5FB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1BD3B7C9249F9178008C5FB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -643,6 +666,9 @@
 		1B59449F24A211FE0015D7FF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1B5944C024A375E60015D7FF /* Helpers */,
+				1B5944AE24A367A10015D7FF /* GMTabView */,
+				1B5944AD24A366C50015D7FF /* GMButtonMenu */,
 				1B5944A124A212130015D7FF /* Reachability */,
 				1B5944A024A2120E0015D7FF /* Utility.h */,
 			);
@@ -656,6 +682,42 @@
 				1B5944A324A212240015D7FF /* Reachability.m */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		1B5944AD24A366C50015D7FF /* GMButtonMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1B5944BA24A36AD70015D7FF /* GMMenuCircularButton.h */,
+				1B5944BB24A36AD70015D7FF /* GMMenuCircularButton.m */,
+				1B5944BD24A36DE60015D7FF /* GMGradient.h */,
+				1B5944BE24A36DE60015D7FF /* GMGradient.m */,
+			);
+			path = GMButtonMenu;
+			sourceTree = "<group>";
+		};
+		1B5944AE24A367A10015D7FF /* GMTabView */ = {
+			isa = PBXGroup;
+			children = (
+				1B5944AF24A367C10015D7FF /* GMTabItemViewController.h */,
+				1B5944B524A367C10015D7FF /* GMTabItemViewController.m */,
+				1B5944B024A367C10015D7FF /* GMTabsView.h */,
+				1B5944B324A367C10015D7FF /* GMTabsView.m */,
+				1B5944B124A367C10015D7FF /* GMTabsViewAsset.xcassets */,
+				1B5944B224A367C10015D7FF /* GMTabsViewController.h */,
+				1B5944B424A367C10015D7FF /* GMTabsViewController.m */,
+			);
+			path = GMTabView;
+			sourceTree = "<group>";
+		};
+		1B5944C024A375E60015D7FF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1B5944C124A375FE0015D7FF /* UIColor+ColorHex.h */,
+				1B5944C224A375FE0015D7FF /* UIColor+ColorHex.m */,
+				1B5944C524A380BE0015D7FF /* UIButton+Animate.h */,
+				1B5944C624A380BE0015D7FF /* UIButton+Animate.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		1BD3B7BC249F9178008C5FB3 = {
@@ -1057,6 +1119,7 @@
 				1BD3B7C1249F9178008C5FB3 /* Sources */,
 				1BD3B7C2249F9178008C5FB3 /* Frameworks */,
 				1BD3B7C3249F9178008C5FB3 /* Resources */,
+				990A160B5EB468A379B13BD4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1141,6 +1204,7 @@
 				1BD3BA2424A0D961008C5FB3 /* united_states.png in Resources */,
 				1BD3BA1C24A0D961008C5FB3 /* argentina.png in Resources */,
 				1BD3B95C24A0D961008C5FB3 /* monaco.png in Resources */,
+				1B5944B624A367C10015D7FF /* GMTabsViewAsset.xcassets in Resources */,
 				1BD3B9CB24A0D961008C5FB3 /* scotland.png in Resources */,
 				1BD3B9E724A0D961008C5FB3 /* brunei.png in Resources */,
 				1BD3B98D24A0D961008C5FB3 /* tristan_de_cunha.png in Resources */,
@@ -1361,6 +1425,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		990A160B5EB468A379B13BD4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartPortfolio/Pods-SmartPortfolio-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartPortfolio/Pods-SmartPortfolio-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartPortfolio/Pods-SmartPortfolio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E82D59BE03C9B668E9070BD2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1392,6 +1473,7 @@
 			files = (
 				1BD3B7EC24A07324008C5FB3 /* IEXService.m in Sources */,
 				1BD3B7DE249F9180008C5FB3 /* main.m in Sources */,
+				1B5944C724A380BE0015D7FF /* UIButton+Animate.m in Sources */,
 				1BD3B82824A0AEF1008C5FB3 /* Quote+CoreDataProperties.m in Sources */,
 				1BD3B82724A0AEF1008C5FB3 /* Country+CoreDataProperties.m in Sources */,
 				1BD3B82E24A0AEF1008C5FB3 /* Country+CoreDataClass.m in Sources */,
@@ -1401,7 +1483,9 @@
 				1BD3B82F24A0AEF1008C5FB3 /* Portfolio+CoreDataClass.m in Sources */,
 				1BD3B7D6249F9178008C5FB3 /* SmartPortfolio.xcdatamodeld in Sources */,
 				1BD3B82024A0AEF1008C5FB3 /* CompanyIndustry+CoreDataClass.m in Sources */,
+				1B5944B924A367C10015D7FF /* GMTabItemViewController.m in Sources */,
 				1BD3B83124A0AEF1008C5FB3 /* ShareTags+CoreDataClass.m in Sources */,
+				1B5944C324A375FE0015D7FF /* UIColor+ColorHex.m in Sources */,
 				1BD3B7D0249F9178008C5FB3 /* ViewController.m in Sources */,
 				1BD3B82324A0AEF1008C5FB3 /* Tag+CoreDataProperties.m in Sources */,
 				1BD3B83624A0D914008C5FB3 /* CountryInfo.m in Sources */,
@@ -1412,12 +1496,16 @@
 				1BD3B7CA249F9178008C5FB3 /* AppDelegate.m in Sources */,
 				1BD3B81D24A0AEF1008C5FB3 /* CompanyIndustry+CoreDataProperties.m in Sources */,
 				1BD3B82424A0AEF1008C5FB3 /* News+CoreDataProperties.m in Sources */,
+				1B5944BF24A36DE60015D7FF /* GMGradient.m in Sources */,
+				1B5944C424A37D560015D7FF /* GMMenuCircularButton.m in Sources */,
 				1B59449D24A20AF20015D7FF /* ReferenceLoaderVCViewController.m in Sources */,
 				1BD3B82524A0AEF1008C5FB3 /* Tag+CoreDataClass.m in Sources */,
 				1BD3B82D24A0AEF1008C5FB3 /* ShareTags+CoreDataProperties.m in Sources */,
 				1BD3B82C24A0AEF1008C5FB3 /* Quote+CoreDataClass.m in Sources */,
 				1B5944A424A212240015D7FF /* Reachability.m in Sources */,
 				1BD3B82A24A0AEF1008C5FB3 /* Stock+CoreDataClass.m in Sources */,
+				1B5944B824A367C10015D7FF /* GMTabsViewController.m in Sources */,
+				1B5944B724A367C10015D7FF /* GMTabsView.m in Sources */,
 				1BD3B82124A0AEF1008C5FB3 /* News+CoreDataClass.m in Sources */,
 				1BD3B83224A0AEF1008C5FB3 /* Share+CoreDataClass.m in Sources */,
 				1BD3B7CD249F9178008C5FB3 /* SceneDelegate.m in Sources */,

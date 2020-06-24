@@ -131,7 +131,7 @@ NSString * const TabChangeAnimationKey  =   @"ball_animation_key";
     [self animateBallWithPath:[self ballPath]];
     [self animateTabToPath:[self fullRectangle] completion:^{
         [self animateTabToPath:[self holePathForSelectedIndex] completion:^{
-            previousTabIndex = self.selectedTabIndex;
+            self->previousTabIndex = self.selectedTabIndex;
         }];
     }];
     [self animateTintColorChanging];
@@ -209,9 +209,8 @@ NSString * const TabChangeAnimationKey  =   @"ball_animation_key";
      animation.duration = TAB_ANIMATION;
 
      CATransaction.completionBlock = ^{
-         NSLog(@"♦️ Здесь падает при сворачивании в фоновый режим,\n shapeLayer.path = %@ \n cgPath = %@",shapeLayer.path, cgPath);
-
-         shapeLayer.path = cgPath;
+         NSLog(@"♦️ Здесь падает при сворачивании в фоновый режим,\n shapeLayer.path = %@ \n cgPath = %@",self->shapeLayer.path, cgPath);
+         self->shapeLayer.path = cgPath;
          if (completion) {
              completion();
          }
@@ -236,7 +235,7 @@ NSString * const TabChangeAnimationKey  =   @"ball_animation_key";
 {
     [UIView animateWithDuration:TINT_CHANGE_ANIMATION animations:^{
         // "unselect" buttons
-        for (UIButton *b in buttons) {
+        for (UIButton *b in self->buttons) {
             NSInteger index  = b.tag - BUTTON_TAG_OFFSET;
             CGRect frame = b.frame;
             if (index != self.selectedTabIndex) {
