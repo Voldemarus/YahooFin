@@ -13,7 +13,7 @@
                 <outlet property="infoPanelView" destination="1VZ-eb-NwK" id="43S-Xj-35Y"/>
                 <outlet property="infoView" destination="1VZ-eb-NwK" id="BeX-1W-wVD"/>
                 <outlet property="operationPrompt" destination="mJR-F6-mec" id="zR4-YC-Evx"/>
-                <outlet property="progress" destination="6Jd-xA-yRR" id="T2O-FM-wf4"/>
+                <outlet property="progressBar" destination="iSD-nG-Wko" id="jUn-xh-TDF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,12 +35,6 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6Jd-xA-yRR">
-                            <rect key="frame" x="25" y="169.66666666666663" width="284" height="5"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="5" id="q6E-TO-sLc"/>
-                            </constraints>
-                        </progressView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading exchanges" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJR-F6-mec">
                             <rect key="frame" x="30" y="30" width="274" height="47"/>
                             <constraints>
@@ -50,16 +44,23 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iSD-nG-Wko">
+                            <rect key="frame" x="30" y="145" width="274" height="29"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="29" id="rdK-FB-1vR"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
+                        <constraint firstItem="iSD-nG-Wko" firstAttribute="leading" secondItem="1VZ-eb-NwK" secondAttribute="leading" constant="30" id="3SF-mR-L7q"/>
+                        <constraint firstAttribute="bottom" secondItem="iSD-nG-Wko" secondAttribute="bottom" constant="20.670000000000002" id="Efx-rj-dS7"/>
                         <constraint firstItem="dsa-LV-eUd" firstAttribute="centerY" secondItem="1VZ-eb-NwK" secondAttribute="centerY" id="Jgb-MF-vzw"/>
-                        <constraint firstItem="6Jd-xA-yRR" firstAttribute="leading" secondItem="1VZ-eb-NwK" secondAttribute="leading" constant="25" id="MEI-hz-Tog"/>
                         <constraint firstAttribute="trailing" secondItem="mJR-F6-mec" secondAttribute="trailing" constant="30" id="OJ0-V6-1Nw"/>
+                        <constraint firstAttribute="trailing" secondItem="iSD-nG-Wko" secondAttribute="trailing" constant="30" id="TK9-A5-HlB"/>
                         <constraint firstAttribute="width" secondItem="1VZ-eb-NwK" secondAttribute="height" multiplier="323:188" id="UoE-2t-d39"/>
                         <constraint firstItem="mJR-F6-mec" firstAttribute="top" secondItem="1VZ-eb-NwK" secondAttribute="top" constant="30" id="c4e-eT-WrR"/>
-                        <constraint firstAttribute="trailing" secondItem="6Jd-xA-yRR" secondAttribute="trailing" constant="25" id="gcO-az-Kj3"/>
-                        <constraint firstAttribute="bottom" secondItem="6Jd-xA-yRR" secondAttribute="bottom" constant="20" id="pNu-sC-taX"/>
                         <constraint firstItem="mJR-F6-mec" firstAttribute="leading" secondItem="1VZ-eb-NwK" secondAttribute="leading" constant="30" id="sv0-qD-rIB"/>
                         <constraint firstItem="dsa-LV-eUd" firstAttribute="centerX" secondItem="1VZ-eb-NwK" secondAttribute="centerX" id="yKE-fR-YpC"/>
                     </constraints>
@@ -72,7 +73,7 @@
                 <constraint firstItem="1VZ-eb-NwK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="ay8-Si-UP2"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="131.8840579710145" y="122.54464285714285"/>
+            <point key="canvasLocation" x="131.8840579710145" y="122.28260869565219"/>
         </view>
     </objects>
 </document>

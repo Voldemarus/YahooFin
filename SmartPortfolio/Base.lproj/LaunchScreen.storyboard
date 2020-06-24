@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2020, Geomatix Laboratory s.r.o." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rw-sH-y0L">
-                                <rect key="frame" x="86.5" y="757" width="241" height="18"/>
+                                <rect key="frame" x="87" y="828" width="241" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="b8Z-wr-hhm"/>
                                     <constraint firstAttribute="width" constant="241" id="cBJ-31-Ikf"/>
@@ -46,7 +46,7 @@
                         <constraints>
                             <constraint firstItem="z12-h8-HYa" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1Xp-MO-ZxV"/>
                             <constraint firstItem="fWn-Pu-fCz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4TK-Bm-8xf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Rw-sH-y0L" secondAttribute="bottom" constant="87" id="DCX-nO-kmA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Rw-sH-y0L" secondAttribute="bottom" constant="16" id="DCX-nO-kmA"/>
                             <constraint firstItem="z12-h8-HYa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="DJn-yj-FKp"/>
                             <constraint firstItem="fWn-Pu-fCz" firstAttribute="bottom" secondItem="z12-h8-HYa" secondAttribute="bottom" constant="29" id="XeQ-Q3-dab"/>
                             <constraint firstItem="7Rw-sH-y0L" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bRf-nK-Diz"/>
