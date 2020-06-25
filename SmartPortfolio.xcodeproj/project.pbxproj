@@ -298,6 +298,8 @@
 		1BD3BA2324A0D961008C5FB3 /* seborga.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BD3B92C24A0D960008C5FB3 /* seborga.png */; };
 		1BD3BA2424A0D961008C5FB3 /* united_states.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BD3B92D24A0D960008C5FB3 /* united_states.png */; };
 		1BD3BA2524A0D961008C5FB3 /* lithuania.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BD3B92E24A0D961008C5FB3 /* lithuania.png */; };
+		1BD96EDE24A3863F008BCEFC /* GMButtonMeniItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD96EDD24A3863F008BCEFC /* GMButtonMeniItem.m */; };
+		1BD96EFB24A4ED8F008BCEFC /* GMStackMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD96EFA24A4ED8F008BCEFC /* GMStackMenu.m */; };
 		9CC6AD71188C17E0C5D7A1D4 /* libPods-SmartPortfolio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 487AF8CEE1676E57536707E2 /* libPods-SmartPortfolio.a */; };
 /* End PBXBuildFile section */
 
@@ -636,6 +638,10 @@
 		1BD3B92C24A0D960008C5FB3 /* seborga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seborga.png; sourceTree = "<group>"; };
 		1BD3B92D24A0D960008C5FB3 /* united_states.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = united_states.png; sourceTree = "<group>"; };
 		1BD3B92E24A0D961008C5FB3 /* lithuania.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lithuania.png; sourceTree = "<group>"; };
+		1BD96EDC24A3863F008BCEFC /* GMButtonMeniItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMButtonMeniItem.h; sourceTree = "<group>"; };
+		1BD96EDD24A3863F008BCEFC /* GMButtonMeniItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMButtonMeniItem.m; sourceTree = "<group>"; };
+		1BD96EF924A4ED8F008BCEFC /* GMStackMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMStackMenu.h; sourceTree = "<group>"; };
+		1BD96EFA24A4ED8F008BCEFC /* GMStackMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMStackMenu.m; sourceTree = "<group>"; };
 		24371944EF7D1F62D0D44704 /* Pods-SmartPortfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPortfolio.release.xcconfig"; path = "Target Support Files/Pods-SmartPortfolio/Pods-SmartPortfolio.release.xcconfig"; sourceTree = "<group>"; };
 		487AF8CEE1676E57536707E2 /* libPods-SmartPortfolio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartPortfolio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B46671DB9D09E029D90CF2C /* Pods-SmartPortfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPortfolio.debug.xcconfig"; path = "Target Support Files/Pods-SmartPortfolio/Pods-SmartPortfolio.debug.xcconfig"; sourceTree = "<group>"; };
@@ -691,6 +697,10 @@
 				1B5944BB24A36AD70015D7FF /* GMMenuCircularButton.m */,
 				1B5944BD24A36DE60015D7FF /* GMGradient.h */,
 				1B5944BE24A36DE60015D7FF /* GMGradient.m */,
+				1BD96EDC24A3863F008BCEFC /* GMButtonMeniItem.h */,
+				1BD96EDD24A3863F008BCEFC /* GMButtonMeniItem.m */,
+				1BD96EF924A4ED8F008BCEFC /* GMStackMenu.h */,
+				1BD96EFA24A4ED8F008BCEFC /* GMStackMenu.m */,
 			);
 			path = GMButtonMenu;
 			sourceTree = "<group>";
@@ -1484,6 +1494,7 @@
 				1BD3B7D6249F9178008C5FB3 /* SmartPortfolio.xcdatamodeld in Sources */,
 				1BD3B82024A0AEF1008C5FB3 /* CompanyIndustry+CoreDataClass.m in Sources */,
 				1B5944B924A367C10015D7FF /* GMTabItemViewController.m in Sources */,
+				1BD96EDE24A3863F008BCEFC /* GMButtonMeniItem.m in Sources */,
 				1BD3B83124A0AEF1008C5FB3 /* ShareTags+CoreDataClass.m in Sources */,
 				1B5944C324A375FE0015D7FF /* UIColor+ColorHex.m in Sources */,
 				1BD3B7D0249F9178008C5FB3 /* ViewController.m in Sources */,
@@ -1493,6 +1504,7 @@
 				1BD3B81E24A0AEF1008C5FB3 /* Share+CoreDataProperties.m in Sources */,
 				1BD3B83024A0AEF1008C5FB3 /* ReferenceShare+CoreDataProperties.m in Sources */,
 				1BD3B81F24A0AEF1008C5FB3 /* Stock+CoreDataProperties.m in Sources */,
+				1BD96EFB24A4ED8F008BCEFC /* GMStackMenu.m in Sources */,
 				1BD3B7CA249F9178008C5FB3 /* AppDelegate.m in Sources */,
 				1BD3B81D24A0AEF1008C5FB3 /* CompanyIndustry+CoreDataProperties.m in Sources */,
 				1BD3B82424A0AEF1008C5FB3 /* News+CoreDataProperties.m in Sources */,

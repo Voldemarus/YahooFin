@@ -12,7 +12,7 @@
 + (UIColor * _Nonnull) colorWithHexString:(NSString *_Nonnull) hexString;
 + (NSString * _Nonnull) hexValuesFromUIColor:(UIColor * _Nonnull) color;
 
-+ (UIColor *  _Nonnull) colorWithR:(int)r g:(int)g andB:(int)b;
++ (UIColor *  _Nonnull) colorWithR:(int)r g:(int)g andB:(int)b alpha:(CGFloat)alpha;
 + (UIColor *  _Nonnull) colorWithRGB:(int)rgb;
 
 

@@ -75,7 +75,7 @@
     return returnString;
  }
 
-+ (UIColor *  _Nonnull) colorWithR:(int)r g:(int)g andB:(int)b
++ (UIColor *  _Nonnull) colorWithR:(int)r g:(int)g andB:(int)b alpha:(CGFloat) alpha
 {
     if (r < 0 || r > 255 || g < 0 || g > 255 || b < 0 || g > 255) {
         return [UIColor blackColor];
@@ -84,7 +84,7 @@
     double green = g / 255.0;
     double blue = b / 255.0;
 
-    return [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
+    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
 
 + (UIColor *  _Nonnull) colorWithRGB:(int)rgb
@@ -92,7 +92,7 @@
     int b = rgb & 0xFF;
     int g = (rgb >> 8) & 0xFF;
     int r = (rgb >> 16) & 0xFF;
-    return [UIColor colorWithR:r g:g andB:b];
+    return [UIColor colorWithR:r g:g andB:b alpha:1.0];
 }
 
 
