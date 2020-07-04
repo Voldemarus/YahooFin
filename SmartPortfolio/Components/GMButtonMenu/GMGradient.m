@@ -58,7 +58,7 @@
     if (_colors.count > 0) {
         return [_colors firstObject];
     }
-    return [UIColor clearColor];
+    return [UIColor blackColor];
 }
 
 - (UIColor *) endColor
@@ -66,7 +66,7 @@
     if (_colors.count > 0) {
         return [_colors lastObject];
     }
-    return [UIColor clearColor];
+    return [UIColor whiteColor];
 }
 
 @end

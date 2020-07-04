@@ -33,9 +33,10 @@
         UIImage *image = [UIImage imageNamed:imString];
         [self setImage:image forState:UIControlStateNormal];
         [self setImage:image forState:UIControlStateHighlighted];
-        CGFloat margin = self.bounds.size.width * 0.25;
+        CGFloat margin = self.bounds.size.width * 0.1;
         self.imageEdgeInsets = UIEdgeInsetsMake(margin, margin, margin, margin);
-        [self bringSubviewToFront:self.imageView];
+
+         [self bringSubviewToFront:self.imageView];
     }
     return self;
 }

@@ -12,8 +12,6 @@
 
 extern NSString * const GMCircularButtonTapped;
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface GMButtonMeniItem : UIView
 
 - (instancetype) initWithFrame:(CGRect) frame imageName:(NSString *)aString
@@ -21,4 +19,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-NS_ASSUME_NONNULL_END
+

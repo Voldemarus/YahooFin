@@ -34,18 +34,18 @@ NSString * const GMCircularButtonTapped =    @"GMCircularButtonTapped";
 
         self.backgroundColor = [UIColor colorWithR:45 g:43 andB:88 alpha:0.2];
         self.layer.cornerRadius = self.bounds.size.width * 0.2;
-        double ofs = self.frame.size.width/2.0;
-        CGRect bFrame = CGRectMake(ofs, ofs, ofs, ofs);
+        double ofs = self.frame.size.width/4.0;
+        CGRect bFrame = CGRectMake(ofs, ofs, ofs*2.0, ofs*2.0);
         self.button = [[GMMenuCircularButton alloc] initWithFrame:bFrame gradient:aGradient andImageName:aString];
         self.button.tag = aTag;
         [self.button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
 
         CGRect lFrame = CGRectMake(0,0,self.frame.size.width, self.frame.size.height * 0.2);
         self.label = [[UILabel alloc] initWithFrame:lFrame];
-        self.label.font = [UIFont systemFontOfSize:14.0];
+        self.label.font = [UIFont systemFontOfSize:16.0];
         self.label.text = bString;
         self.label.textAlignment = NSTextAlignmentCenter;
-        self.label.textColor = [UIColor whiteColor];
+        self.label.textColor = [UIColor darkTextColor];
 
         [self addSubview:self.button];
         [self addSubview:self.label];
@@ -115,7 +115,7 @@ NSString * const GMCircularButtonTapped =    @"GMCircularButtonTapped";
           toItem:self
           attribute:NSLayoutAttributeBottom
           multiplier:1.0
-          constant:-20.0]];
+          constant:-10.0]];
 }
 
 - (void) setButtonConstraintsForButton:(UIButton *) button
@@ -128,28 +128,27 @@ NSString * const GMCircularButtonTapped =    @"GMCircularButtonTapped";
           multiplier:1.0
           constant:0]];
 
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:button
-           attribute:NSLayoutAttributeCenterY
-           relatedBy:NSLayoutRelationEqual
-           toItem:self
-           attribute:NSLayoutAttributeCenterY
-           multiplier:1.0
-           constant:0]];
+//    [self addConstraint:[NSLayoutConstraint constraintWithItem:button
+//           attribute:NSLayoutAttributeCenterY
+//           relatedBy:NSLayoutRelationEqual
+//           toItem:self
+//           attribute:NSLayoutAttributeCenterY
+//           multiplier:1.0
+//           constant:0]];
 
     [self addConstraint:[NSLayoutConstraint constraintWithItem:button
          attribute:NSLayoutAttributeTop
          relatedBy:NSLayoutRelationEqual
          toItem:self
         attribute:NSLayoutAttributeTop
-         multiplier:1.0
-         constant:0]];
+         multiplier:1.0  constant:10.0]];
 
     [self addConstraint:[NSLayoutConstraint constraintWithItem:button
          attribute:NSLayoutAttributeWidth
          relatedBy:NSLayoutRelationEqual
          toItem:self
          attribute:NSLayoutAttributeHeight
-         multiplier:30.0/82.0
+          multiplier:0.5
          constant:.0]];
 
     [self addConstraint:[NSLayoutConstraint constraintWithItem:button

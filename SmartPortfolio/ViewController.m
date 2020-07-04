@@ -48,9 +48,10 @@
 - (NSArray *) curcularMenuData
 {
     GMGradient *gradient = [[GMGradient alloc] init];
-    [gradient.colors addObject:[UIColor colorWithR:0 g:0 andB:20 alpha:1.0]];
-    [gradient.colors addObject:[UIColor colorWithR:0 g:0 andB:160 alpha:1.0]];
-    [gradient.colors addObject:[UIColor colorWithR:0 g:0 andB:20 alpha:1.0]];
+    [gradient.colors addObject:[UIColor colorWithR:0 g:0 andB:60 alpha:1.0]];
+    [gradient.colors addObject:[UIColor colorWithR:0 g:0 andB:210 alpha:1.0]];
+
+    NSLog(@"colors - %@", gradient.colors);
     
     return @[
         @[@1000, @"News", @"News", gradient],
