@@ -45,7 +45,7 @@
 {
     [super layoutSubviews];
     gradientLayer.frame = self.bounds;
-    gradientLayer.cornerRadius = self.bounds.size.width * 0.25;
+    gradientLayer.cornerRadius = self.bounds.size.width * 0.2;
     CGFloat margin = self.bounds.size.width * 0.25;
     self.imageEdgeInsets = UIEdgeInsetsMake(margin, margin, margin, margin);
 }

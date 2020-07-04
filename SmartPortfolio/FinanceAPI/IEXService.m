@@ -189,8 +189,8 @@ typedef NS_ENUM(NSInteger, RequestType) {
         } else {
             NSError *parseError = nil;
             id result = [NSJSONSerialization JSONObjectWithData:data options:0 error:&parseError];
-            if (error) {
-                NSLog(@"Cannot parse incoming result - %@", [error localizedDescription]);
+            if (parseError) {
+                NSLog(@"Cannot parse incoming result - %@", [parseError localizedDescription]);
             } else {
                 NSLog(@"result - %@", result);
                 switch(aid) {

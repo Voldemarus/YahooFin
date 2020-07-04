@@ -39,7 +39,6 @@ NSString * const GMCircularButtonTapped =    @"GMCircularButtonTapped";
         self.button = [[GMMenuCircularButton alloc] initWithFrame:bFrame gradient:aGradient andImageName:aString];
         self.button.tag = aTag;
         [self.button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
-        [self setConstraintsForLabel:self.label andButton:self.button];
 
         CGRect lFrame = CGRectMake(0,0,self.frame.size.width, self.frame.size.height * 0.2);
         self.label = [[UILabel alloc] initWithFrame:lFrame];

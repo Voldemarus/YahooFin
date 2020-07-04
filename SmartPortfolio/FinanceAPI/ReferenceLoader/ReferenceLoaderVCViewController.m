@@ -74,12 +74,13 @@
     l.borderWidth = 0.5;
 
     CGRect frame = self.view.frame;
-    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleRegular];
     UIVisualEffectView *efView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
     efView.frame = frame;
     [self.view insertSubview:efView belowSubview:self.infoPanelView];
     l.shadowColor = [UIColor darkGrayColor].CGColor;
     l.borderColor = [UIColor blueColor].CGColor;
+    l.borderWidth = 1.0;
     self.operationPrompt.text = @"";
      self.countLabel.text = @"";
     //

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "GMGradient.h"
+#import "UIColor+ColorHex.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol GMStackMenuDelegate <NSObject>
@@ -16,13 +19,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+/**
+    ButtonList Array of arrays:
+        @[  @(buttonTag), NSString *imageName, NSString *labelText, CMGradient *gradient ]
+ */
 
-@interface GMStackMenu : UIStackView
+
+@interface GMStackMenu : UIView
 
 @property (nonatomic, assign) id <GMStackMenuDelegate> delegate;
 
 - (instancetype) initWithFrame:(CGRect)frame andButtonList:(NSArray *)bList;
 
+
+- (void) showOnScreen;
+- (void) hideFromScreen;
 
 @end
 

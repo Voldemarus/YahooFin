@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "GMStackMenu.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ReferenceLoaderVCViewController : UIViewController
