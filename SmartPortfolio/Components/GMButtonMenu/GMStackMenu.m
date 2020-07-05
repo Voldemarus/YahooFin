@@ -35,7 +35,11 @@
 
 - (void) stackConfiguration
 {
-    outer = [[UIStackView alloc] initWithFrame:self.frame];
+    CGRect stackviewFrame = CGRectMake(self.frame.origin.x,
+                                       self.frame.origin.y + 100, // отступ сверху
+                                       self.frame.size.width,
+                                       self.frame.size.height - 100);
+    outer = [[UIStackView alloc] initWithFrame: stackviewFrame];
 
     outer.axis = UILayoutConstraintAxisVertical;
     outer.alignment = UIStackViewAlignmentCenter;
