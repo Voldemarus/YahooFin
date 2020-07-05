@@ -278,6 +278,8 @@
 		1BD96EDE24A3863F008BCEFC /* GMButtonMeniItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD96EDD24A3863F008BCEFC /* GMButtonMeniItem.m */; };
 		1BD96EFB24A4ED8F008BCEFC /* GMStackMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD96EFA24A4ED8F008BCEFC /* GMStackMenu.m */; };
 		9CC6AD71188C17E0C5D7A1D4 /* libPods-SmartPortfolio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 487AF8CEE1676E57536707E2 /* libPods-SmartPortfolio.a */; };
+		AE1657C924B2144E005421EE /* MenuCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1657C724B2144E005421EE /* MenuCollectionViewController.m */; };
+		AE1657CA24B2144E005421EE /* MenuCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1657C824B2144E005421EE /* MenuCollectionViewController.xib */; };
 		AE52C08224B2017E008F77D1 /* Tag+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C06524B2017B008F77D1 /* Tag+CoreDataProperties.m */; };
 		AE52C08324B2017E008F77D1 /* ReferenceShare+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07C24B2017D008F77D1 /* ReferenceShare+CoreDataProperties.m */; };
 		AE52C08424B2017E008F77D1 /* Portfolio+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07E24B2017D008F77D1 /* Portfolio+CoreDataClass.m */; };
@@ -301,6 +303,10 @@
 		AE52C09624B2017E008F77D1 /* Tag+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07324B2017C008F77D1 /* Tag+CoreDataClass.m */; };
 		AE52C09724B2017E008F77D1 /* Share+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C08024B2017E008F77D1 /* Share+CoreDataClass.m */; };
 		AE52C09A24B201B4008F77D1 /* IEXService.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C09824B201B4008F77D1 /* IEXService.m */; };
+		AE52C0A124B20C0C008F77D1 /* MenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C09F24B20C0C008F77D1 /* MenuCollectionViewCell.m */; };
+		AE52C0A224B20C0C008F77D1 /* MenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE52C0A024B20C0C008F77D1 /* MenuCollectionViewCell.xib */; };
+		AE52C0A724B20EAD008F77D1 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C0A524B20EAD008F77D1 /* MenuViewController.m */; };
+		AE52C0A824B20EAD008F77D1 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE52C0A624B20EAD008F77D1 /* MenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -599,6 +605,9 @@
 		24371944EF7D1F62D0D44704 /* Pods-SmartPortfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPortfolio.release.xcconfig"; path = "Target Support Files/Pods-SmartPortfolio/Pods-SmartPortfolio.release.xcconfig"; sourceTree = "<group>"; };
 		487AF8CEE1676E57536707E2 /* libPods-SmartPortfolio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartPortfolio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B46671DB9D09E029D90CF2C /* Pods-SmartPortfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPortfolio.debug.xcconfig"; path = "Target Support Files/Pods-SmartPortfolio/Pods-SmartPortfolio.debug.xcconfig"; sourceTree = "<group>"; };
+		AE1657C624B2144E005421EE /* MenuCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuCollectionViewController.h; sourceTree = "<group>"; };
+		AE1657C724B2144E005421EE /* MenuCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuCollectionViewController.m; sourceTree = "<group>"; };
+		AE1657C824B2144E005421EE /* MenuCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionViewController.xib; sourceTree = "<group>"; };
 		AE52C05624B2017A008F77D1 /* Stock+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Stock+CoreDataProperties.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Stock+CoreDataProperties.m"; sourceTree = "<absolute>"; };
 		AE52C05724B2017A008F77D1 /* ShareTags+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShareTags+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/ShareTags+CoreDataProperties.h"; sourceTree = "<absolute>"; };
 		AE52C05824B2017A008F77D1 /* ShareTags+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShareTags+CoreDataClass.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/ShareTags+CoreDataClass.h"; sourceTree = "<absolute>"; };
@@ -645,6 +654,12 @@
 		AE52C08124B2017E008F77D1 /* Share+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Share+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Share+CoreDataProperties.h"; sourceTree = "<absolute>"; };
 		AE52C09824B201B4008F77D1 /* IEXService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEXService.m; sourceTree = "<group>"; };
 		AE52C09924B201B4008F77D1 /* IEXService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEXService.h; sourceTree = "<group>"; };
+		AE52C09E24B20C0C008F77D1 /* MenuCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuCollectionViewCell.h; sourceTree = "<group>"; };
+		AE52C09F24B20C0C008F77D1 /* MenuCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuCollectionViewCell.m; sourceTree = "<group>"; };
+		AE52C0A024B20C0C008F77D1 /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		AE52C0A424B20EAD008F77D1 /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		AE52C0A524B20EAD008F77D1 /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		AE52C0A624B20EAD008F77D1 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -761,6 +776,7 @@
 				1BD3B7CC249F9178008C5FB3 /* SceneDelegate.m */,
 				1BD3B7CE249F9178008C5FB3 /* ViewController.h */,
 				1BD3B7CF249F9178008C5FB3 /* ViewController.m */,
+				AE52C0A324B20C12008F77D1 /* Menu */,
 				1BD3B7D1249F9178008C5FB3 /* Main.storyboard */,
 				1BD3B7D7249F9180008C5FB3 /* Assets.xcassets */,
 				1BD3B7D9249F9180008C5FB3 /* LaunchScreen.storyboard */,
@@ -1118,6 +1134,46 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AE1657CB24B22108005421EE /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AE52C0A424B20EAD008F77D1 /* MenuViewController.h */,
+				AE52C0A524B20EAD008F77D1 /* MenuViewController.m */,
+				AE52C0A624B20EAD008F77D1 /* MenuViewController.xib */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
+		AE1657CC24B22114005421EE /* MenuColletionCell */ = {
+			isa = PBXGroup;
+			children = (
+				AE52C09E24B20C0C008F77D1 /* MenuCollectionViewCell.h */,
+				AE52C09F24B20C0C008F77D1 /* MenuCollectionViewCell.m */,
+				AE52C0A024B20C0C008F77D1 /* MenuCollectionViewCell.xib */,
+			);
+			path = MenuColletionCell;
+			sourceTree = "<group>";
+		};
+		AE1657CD24B22124005421EE /* MenuCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				AE1657CC24B22114005421EE /* MenuColletionCell */,
+				AE1657C624B2144E005421EE /* MenuCollectionViewController.h */,
+				AE1657C724B2144E005421EE /* MenuCollectionViewController.m */,
+				AE1657C824B2144E005421EE /* MenuCollectionViewController.xib */,
+			);
+			path = MenuCollectionView;
+			sourceTree = "<group>";
+		};
+		AE52C0A324B20C12008F77D1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				AE1657CB24B22108005421EE /* MenuViewController */,
+				AE1657CD24B22124005421EE /* MenuCollectionView */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1208,6 +1264,7 @@
 				1BD3BA1624A0D961008C5FB3 /* antigua_barbuda.png in Resources */,
 				1BD3B94924A0D961008C5FB3 /* qatar.png in Resources */,
 				1BD3B96424A0D961008C5FB3 /* brazil.png in Resources */,
+				AE52C0A224B20C0C008F77D1 /* MenuCollectionViewCell.xib in Resources */,
 				1BD3BA1B24A0D961008C5FB3 /* barbados.png in Resources */,
 				1BD3B9FC24A0D961008C5FB3 /* latvia.png in Resources */,
 				1BD3B94624A0D961008C5FB3 /* cuba.png in Resources */,
@@ -1308,6 +1365,7 @@
 				1BD3B95824A0D961008C5FB3 /* panama.png in Resources */,
 				1BD3B98524A0D961008C5FB3 /* kuwait.png in Resources */,
 				1BD3B96224A0D961008C5FB3 /* myanmar.png in Resources */,
+				AE1657CA24B2144E005421EE /* MenuCollectionViewController.xib in Resources */,
 				1BD3B93224A0D961008C5FB3 /* denmark.png in Resources */,
 				1BD3B96F24A0D961008C5FB3 /* st_vincent_grenadines.png in Resources */,
 				1BD3BA0324A0D961008C5FB3 /* new_caledonia.png in Resources */,
@@ -1401,6 +1459,7 @@
 				1BD3B93124A0D961008C5FB3 /* kenya.png in Resources */,
 				1BD3B9BC24A0D961008C5FB3 /* thailand.png in Resources */,
 				1BD3B95524A0D961008C5FB3 /* serbia.png in Resources */,
+				AE52C0A824B20EAD008F77D1 /* MenuViewController.xib in Resources */,
 				1BD3B9D724A0D961008C5FB3 /* antarctica.png in Resources */,
 				1BD3B9E924A0D961008C5FB3 /* germany.png in Resources */,
 				1BD3BA0E24A0D961008C5FB3 /* colombia.png in Resources */,
@@ -1490,6 +1549,7 @@
 				AE52C08D24B2017E008F77D1 /* ShareTags+CoreDataProperties.m in Sources */,
 				AE52C09224B2017E008F77D1 /* Share+CoreDataProperties.m in Sources */,
 				1B5944B924A367C10015D7FF /* GMTabItemViewController.m in Sources */,
+				AE1657C924B2144E005421EE /* MenuCollectionViewController.m in Sources */,
 				AE52C08724B2017E008F77D1 /* Country+CoreDataProperties.m in Sources */,
 				1BD96EDE24A3863F008BCEFC /* GMButtonMeniItem.m in Sources */,
 				AE52C08A24B2017E008F77D1 /* CompanyIndustry+CoreDataProperties.m in Sources */,
@@ -1511,6 +1571,7 @@
 				1B5944BF24A36DE60015D7FF /* GMGradient.m in Sources */,
 				AE52C08624B2017E008F77D1 /* Stock+CoreDataClass.m in Sources */,
 				AE52C09024B2017E008F77D1 /* News+CoreDataProperties.m in Sources */,
+				AE52C0A724B20EAD008F77D1 /* MenuViewController.m in Sources */,
 				1B5944C424A37D560015D7FF /* GMMenuCircularButton.m in Sources */,
 				AE52C09724B2017E008F77D1 /* Share+CoreDataClass.m in Sources */,
 				1B59449D24A20AF20015D7FF /* ReferenceLoaderVCViewController.m in Sources */,
@@ -1518,6 +1579,7 @@
 				AE52C08E24B2017E008F77D1 /* ShareTags+CoreDataClass.m in Sources */,
 				AE52C08424B2017E008F77D1 /* Portfolio+CoreDataClass.m in Sources */,
 				1B5944B824A367C10015D7FF /* GMTabsViewController.m in Sources */,
+				AE52C0A124B20C0C008F77D1 /* MenuCollectionViewCell.m in Sources */,
 				1B5944B724A367C10015D7FF /* GMTabsView.m in Sources */,
 				AE52C08824B2017E008F77D1 /* News+CoreDataClass.m in Sources */,
 				AE52C09624B2017E008F77D1 /* Tag+CoreDataClass.m in Sources */,

@@ -11,6 +11,9 @@
 #import "GMStackMenu.h"
 #import "DAO.h"
 
+#import "MenuViewController.h"
+
+
 @interface ViewController () <GMStackMenuDelegate>
 
 @property (nonatomic, retain) GMStackMenu *stackMenu;
@@ -36,11 +39,11 @@
 
         }
      }
-    self.stackMenu = [[GMStackMenu alloc] initWithFrame:self.view.bounds andButtonList:[self curcularMenuData]];
-    self.stackMenu.delegate = self;
-    [self.view addSubview:self.stackMenu];
+}
 
-    [self.stackMenu showOnScreen];
+- (void)viewDidAppear:(BOOL)animated {
+    MenuViewController *menuVC = [[MenuViewController alloc] init];
+    [self presentViewController:menuVC animated:YES completion:nil];
 }
 
 
@@ -64,15 +67,6 @@
     ];
 }
 
-- (void)stackMenuButtonPressedWithTag:(NSInteger) aTag
-{
-    NSLog(@"Кнопка - %ld",aTag);
-}
 
-
-- (IBAction)menuTapped:(id)sender
-{
-    [self.stackMenu showOnScreen];
-}
 
 @end
