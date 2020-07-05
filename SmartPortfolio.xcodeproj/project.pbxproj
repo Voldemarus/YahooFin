@@ -26,30 +26,7 @@
 		1BD3B7D8249F9180008C5FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD3B7D7249F9180008C5FB3 /* Assets.xcassets */; };
 		1BD3B7DB249F9180008C5FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD3B7D9249F9180008C5FB3 /* LaunchScreen.storyboard */; };
 		1BD3B7DE249F9180008C5FB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7DD249F9180008C5FB3 /* main.m */; };
-		1BD3B7EC24A07324008C5FB3 /* IEXService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7EA24A07324008C5FB3 /* IEXService.m */; };
 		1BD3B7F024A08789008C5FB3 /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7EF24A08789008C5FB3 /* DAO.m */; };
-		1BD3B81D24A0AEF1008C5FB3 /* CompanyIndustry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B80424A0AEEF008C5FB3 /* CompanyIndustry+CoreDataProperties.m */; };
-		1BD3B81E24A0AEF1008C5FB3 /* Share+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7FB24A0AEEE008C5FB3 /* Share+CoreDataProperties.m */; };
-		1BD3B81F24A0AEF1008C5FB3 /* Stock+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B80924A0AEEF008C5FB3 /* Stock+CoreDataProperties.m */; };
-		1BD3B82024A0AEF1008C5FB3 /* CompanyIndustry+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7F424A0AEED008C5FB3 /* CompanyIndustry+CoreDataClass.m */; };
-		1BD3B82124A0AEF1008C5FB3 /* News+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B81624A0AEF1008C5FB3 /* News+CoreDataClass.m */; };
-		1BD3B82224A0AEF1008C5FB3 /* Portfolio+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B81B24A0AEF1008C5FB3 /* Portfolio+CoreDataProperties.m */; };
-		1BD3B82324A0AEF1008C5FB3 /* Tag+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B81324A0AEF0008C5FB3 /* Tag+CoreDataProperties.m */; };
-		1BD3B82424A0AEF1008C5FB3 /* News+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B80C24A0AEEF008C5FB3 /* News+CoreDataProperties.m */; };
-		1BD3B82524A0AEF1008C5FB3 /* Tag+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B81224A0AEF0008C5FB3 /* Tag+CoreDataClass.m */; };
-		1BD3B82624A0AEF1008C5FB3 /* Sector+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B80A24A0AEEF008C5FB3 /* Sector+CoreDataClass.m */; };
-		1BD3B82724A0AEF1008C5FB3 /* Country+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B80F24A0AEF0008C5FB3 /* Country+CoreDataProperties.m */; };
-		1BD3B82824A0AEF1008C5FB3 /* Quote+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B80724A0AEEF008C5FB3 /* Quote+CoreDataProperties.m */; };
-		1BD3B82924A0AEF1008C5FB3 /* ReferenceShare+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B80124A0AEEE008C5FB3 /* ReferenceShare+CoreDataClass.m */; };
-		1BD3B82A24A0AEF1008C5FB3 /* Stock+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B81024A0AEF0008C5FB3 /* Stock+CoreDataClass.m */; };
-		1BD3B82B24A0AEF1008C5FB3 /* Sector+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B81A24A0AEF1008C5FB3 /* Sector+CoreDataProperties.m */; };
-		1BD3B82C24A0AEF1008C5FB3 /* Quote+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7F524A0AEED008C5FB3 /* Quote+CoreDataClass.m */; };
-		1BD3B82D24A0AEF1008C5FB3 /* ShareTags+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B80524A0AEEF008C5FB3 /* ShareTags+CoreDataProperties.m */; };
-		1BD3B82E24A0AEF1008C5FB3 /* Country+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7FD24A0AEEE008C5FB3 /* Country+CoreDataClass.m */; };
-		1BD3B82F24A0AEF1008C5FB3 /* Portfolio+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7F124A0AEED008C5FB3 /* Portfolio+CoreDataClass.m */; };
-		1BD3B83024A0AEF1008C5FB3 /* ReferenceShare+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B81924A0AEF1008C5FB3 /* ReferenceShare+CoreDataProperties.m */; };
-		1BD3B83124A0AEF1008C5FB3 /* ShareTags+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B81C24A0AEF1008C5FB3 /* ShareTags+CoreDataClass.m */; };
-		1BD3B83224A0AEF1008C5FB3 /* Share+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B7FE24A0AEEE008C5FB3 /* Share+CoreDataClass.m */; };
 		1BD3B83624A0D914008C5FB3 /* CountryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3B83424A0D913008C5FB3 /* CountryInfo.m */; };
 		1BD3B92F24A0D961008C5FB3 /* chad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BD3B83824A0D936008C5FB3 /* chad.png */; };
 		1BD3B93024A0D961008C5FB3 /* paraguay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BD3B83924A0D936008C5FB3 /* paraguay.png */; };
@@ -301,6 +278,29 @@
 		1BD96EDE24A3863F008BCEFC /* GMButtonMeniItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD96EDD24A3863F008BCEFC /* GMButtonMeniItem.m */; };
 		1BD96EFB24A4ED8F008BCEFC /* GMStackMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD96EFA24A4ED8F008BCEFC /* GMStackMenu.m */; };
 		9CC6AD71188C17E0C5D7A1D4 /* libPods-SmartPortfolio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 487AF8CEE1676E57536707E2 /* libPods-SmartPortfolio.a */; };
+		AE52C08224B2017E008F77D1 /* Tag+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C06524B2017B008F77D1 /* Tag+CoreDataProperties.m */; };
+		AE52C08324B2017E008F77D1 /* ReferenceShare+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07C24B2017D008F77D1 /* ReferenceShare+CoreDataProperties.m */; };
+		AE52C08424B2017E008F77D1 /* Portfolio+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07E24B2017D008F77D1 /* Portfolio+CoreDataClass.m */; };
+		AE52C08524B2017E008F77D1 /* Quote+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07124B2017C008F77D1 /* Quote+CoreDataClass.m */; };
+		AE52C08624B2017E008F77D1 /* Stock+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C05E24B2017A008F77D1 /* Stock+CoreDataClass.m */; };
+		AE52C08724B2017E008F77D1 /* Country+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07F24B2017D008F77D1 /* Country+CoreDataProperties.m */; };
+		AE52C08824B2017E008F77D1 /* News+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C06024B2017A008F77D1 /* News+CoreDataClass.m */; };
+		AE52C08924B2017E008F77D1 /* Portfolio+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C05924B2017A008F77D1 /* Portfolio+CoreDataProperties.m */; };
+		AE52C08A24B2017E008F77D1 /* CompanyIndustry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07624B2017D008F77D1 /* CompanyIndustry+CoreDataProperties.m */; };
+		AE52C08B24B2017E008F77D1 /* Country+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C06324B2017B008F77D1 /* Country+CoreDataClass.m */; };
+		AE52C08C24B2017E008F77D1 /* Sector+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07424B2017C008F77D1 /* Sector+CoreDataProperties.m */; };
+		AE52C08D24B2017E008F77D1 /* ShareTags+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07224B2017C008F77D1 /* ShareTags+CoreDataProperties.m */; };
+		AE52C08E24B2017E008F77D1 /* ShareTags+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C05B24B2017A008F77D1 /* ShareTags+CoreDataClass.m */; };
+		AE52C08F24B2017E008F77D1 /* ReferenceShare+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C06A24B2017B008F77D1 /* ReferenceShare+CoreDataClass.m */; };
+		AE52C09024B2017E008F77D1 /* News+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C05F24B2017A008F77D1 /* News+CoreDataProperties.m */; };
+		AE52C09124B2017E008F77D1 /* Sector+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C06C24B2017C008F77D1 /* Sector+CoreDataClass.m */; };
+		AE52C09224B2017E008F77D1 /* Share+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07724B2017D008F77D1 /* Share+CoreDataProperties.m */; };
+		AE52C09324B2017E008F77D1 /* Quote+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07B24B2017D008F77D1 /* Quote+CoreDataProperties.m */; };
+		AE52C09424B2017E008F77D1 /* Stock+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C05624B2017A008F77D1 /* Stock+CoreDataProperties.m */; };
+		AE52C09524B2017E008F77D1 /* CompanyIndustry+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C06D24B2017C008F77D1 /* CompanyIndustry+CoreDataClass.m */; };
+		AE52C09624B2017E008F77D1 /* Tag+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C07324B2017C008F77D1 /* Tag+CoreDataClass.m */; };
+		AE52C09724B2017E008F77D1 /* Share+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C08024B2017E008F77D1 /* Share+CoreDataClass.m */; };
+		AE52C09A24B201B4008F77D1 /* IEXService.m in Sources */ = {isa = PBXBuildFile; fileRef = AE52C09824B201B4008F77D1 /* IEXService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -341,54 +341,8 @@
 		1BD3B7E5249F9495008C5FB3 /* YahooFinService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YahooFinService.h; sourceTree = "<group>"; };
 		1BD3B7E6249F9495008C5FB3 /* YahooFinService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YahooFinService.m; sourceTree = "<group>"; };
 		1BD3B7E824A072C5008C5FB3 /* Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
-		1BD3B7EA24A07324008C5FB3 /* IEXService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IEXService.m; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/FinanceAPI/IEXService.m"; sourceTree = "<absolute>"; };
-		1BD3B7EB24A07324008C5FB3 /* IEXService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IEXService.h; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/FinanceAPI/IEXService.h"; sourceTree = "<absolute>"; };
 		1BD3B7EE24A08789008C5FB3 /* DAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAO.h; sourceTree = "<group>"; };
 		1BD3B7EF24A08789008C5FB3 /* DAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAO.m; sourceTree = "<group>"; };
-		1BD3B7F124A0AEED008C5FB3 /* Portfolio+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Portfolio+CoreDataClass.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Portfolio+CoreDataClass.m"; sourceTree = "<absolute>"; };
-		1BD3B7F224A0AEED008C5FB3 /* Share+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Share+CoreDataProperties.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Share+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		1BD3B7F324A0AEED008C5FB3 /* Quote+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Quote+CoreDataClass.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Quote+CoreDataClass.h"; sourceTree = "<absolute>"; };
-		1BD3B7F424A0AEED008C5FB3 /* CompanyIndustry+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CompanyIndustry+CoreDataClass.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/CompanyIndustry+CoreDataClass.m"; sourceTree = "<absolute>"; };
-		1BD3B7F524A0AEED008C5FB3 /* Quote+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Quote+CoreDataClass.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Quote+CoreDataClass.m"; sourceTree = "<absolute>"; };
-		1BD3B7F624A0AEED008C5FB3 /* ShareTags+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShareTags+CoreDataClass.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/ShareTags+CoreDataClass.h"; sourceTree = "<absolute>"; };
-		1BD3B7F724A0AEED008C5FB3 /* News+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "News+CoreDataClass.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/News+CoreDataClass.h"; sourceTree = "<absolute>"; };
-		1BD3B7F824A0AEED008C5FB3 /* Sector+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Sector+CoreDataProperties.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Sector+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		1BD3B7F924A0AEEE008C5FB3 /* ReferenceShare+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ReferenceShare+CoreDataClass.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/ReferenceShare+CoreDataClass.h"; sourceTree = "<absolute>"; };
-		1BD3B7FA24A0AEEE008C5FB3 /* Portfolio+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Portfolio+CoreDataClass.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Portfolio+CoreDataClass.h"; sourceTree = "<absolute>"; };
-		1BD3B7FB24A0AEEE008C5FB3 /* Share+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Share+CoreDataProperties.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Share+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		1BD3B7FC24A0AEEE008C5FB3 /* CompanyIndustry+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CompanyIndustry+CoreDataClass.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/CompanyIndustry+CoreDataClass.h"; sourceTree = "<absolute>"; };
-		1BD3B7FD24A0AEEE008C5FB3 /* Country+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Country+CoreDataClass.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Country+CoreDataClass.m"; sourceTree = "<absolute>"; };
-		1BD3B7FE24A0AEEE008C5FB3 /* Share+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Share+CoreDataClass.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Share+CoreDataClass.m"; sourceTree = "<absolute>"; };
-		1BD3B7FF24A0AEEE008C5FB3 /* Country+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Country+CoreDataProperties.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Country+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		1BD3B80024A0AEEE008C5FB3 /* Tag+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Tag+CoreDataClass.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Tag+CoreDataClass.h"; sourceTree = "<absolute>"; };
-		1BD3B80124A0AEEE008C5FB3 /* ReferenceShare+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ReferenceShare+CoreDataClass.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/ReferenceShare+CoreDataClass.m"; sourceTree = "<absolute>"; };
-		1BD3B80224A0AEEE008C5FB3 /* News+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "News+CoreDataProperties.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/News+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		1BD3B80324A0AEEE008C5FB3 /* ReferenceShare+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ReferenceShare+CoreDataProperties.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/ReferenceShare+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		1BD3B80424A0AEEF008C5FB3 /* CompanyIndustry+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CompanyIndustry+CoreDataProperties.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/CompanyIndustry+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		1BD3B80524A0AEEF008C5FB3 /* ShareTags+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ShareTags+CoreDataProperties.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/ShareTags+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		1BD3B80624A0AEEF008C5FB3 /* Quote+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Quote+CoreDataProperties.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Quote+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		1BD3B80724A0AEEF008C5FB3 /* Quote+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Quote+CoreDataProperties.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Quote+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		1BD3B80824A0AEEF008C5FB3 /* Stock+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Stock+CoreDataClass.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Stock+CoreDataClass.h"; sourceTree = "<absolute>"; };
-		1BD3B80924A0AEEF008C5FB3 /* Stock+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Stock+CoreDataProperties.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Stock+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		1BD3B80A24A0AEEF008C5FB3 /* Sector+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Sector+CoreDataClass.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Sector+CoreDataClass.m"; sourceTree = "<absolute>"; };
-		1BD3B80B24A0AEEF008C5FB3 /* Share+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Share+CoreDataClass.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Share+CoreDataClass.h"; sourceTree = "<absolute>"; };
-		1BD3B80C24A0AEEF008C5FB3 /* News+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "News+CoreDataProperties.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/News+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		1BD3B80D24A0AEF0008C5FB3 /* Portfolio+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Portfolio+CoreDataProperties.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Portfolio+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		1BD3B80E24A0AEF0008C5FB3 /* Stock+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Stock+CoreDataProperties.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Stock+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		1BD3B80F24A0AEF0008C5FB3 /* Country+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Country+CoreDataProperties.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Country+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		1BD3B81024A0AEF0008C5FB3 /* Stock+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Stock+CoreDataClass.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Stock+CoreDataClass.m"; sourceTree = "<absolute>"; };
-		1BD3B81124A0AEF0008C5FB3 /* Tag+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Tag+CoreDataProperties.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Tag+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		1BD3B81224A0AEF0008C5FB3 /* Tag+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Tag+CoreDataClass.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Tag+CoreDataClass.m"; sourceTree = "<absolute>"; };
-		1BD3B81324A0AEF0008C5FB3 /* Tag+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Tag+CoreDataProperties.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Tag+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		1BD3B81424A0AEF0008C5FB3 /* Sector+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Sector+CoreDataClass.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Sector+CoreDataClass.h"; sourceTree = "<absolute>"; };
-		1BD3B81524A0AEF1008C5FB3 /* CompanyIndustry+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CompanyIndustry+CoreDataProperties.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/CompanyIndustry+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		1BD3B81624A0AEF1008C5FB3 /* News+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "News+CoreDataClass.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/News+CoreDataClass.m"; sourceTree = "<absolute>"; };
-		1BD3B81724A0AEF1008C5FB3 /* ShareTags+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShareTags+CoreDataProperties.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/ShareTags+CoreDataProperties.h"; sourceTree = "<absolute>"; };
-		1BD3B81824A0AEF1008C5FB3 /* Country+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Country+CoreDataClass.h"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Country+CoreDataClass.h"; sourceTree = "<absolute>"; };
-		1BD3B81924A0AEF1008C5FB3 /* ReferenceShare+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ReferenceShare+CoreDataProperties.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/ReferenceShare+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		1BD3B81A24A0AEF1008C5FB3 /* Sector+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Sector+CoreDataProperties.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Sector+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		1BD3B81B24A0AEF1008C5FB3 /* Portfolio+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Portfolio+CoreDataProperties.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/Portfolio+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		1BD3B81C24A0AEF1008C5FB3 /* ShareTags+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ShareTags+CoreDataClass.m"; path = "/Users/1/Asteros/Geomatix/IOS-Geomatix/Bezdelushki-Masha/SmartPortfolio/SmartPortfolio/DataModel/ShareTags+CoreDataClass.m"; sourceTree = "<absolute>"; };
 		1BD3B83424A0D913008C5FB3 /* CountryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryInfo.m; sourceTree = "<group>"; };
 		1BD3B83524A0D913008C5FB3 /* CountryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryInfo.h; sourceTree = "<group>"; };
 		1BD3B83824A0D936008C5FB3 /* chad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chad.png; sourceTree = "<group>"; };
@@ -645,6 +599,52 @@
 		24371944EF7D1F62D0D44704 /* Pods-SmartPortfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPortfolio.release.xcconfig"; path = "Target Support Files/Pods-SmartPortfolio/Pods-SmartPortfolio.release.xcconfig"; sourceTree = "<group>"; };
 		487AF8CEE1676E57536707E2 /* libPods-SmartPortfolio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartPortfolio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B46671DB9D09E029D90CF2C /* Pods-SmartPortfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartPortfolio.debug.xcconfig"; path = "Target Support Files/Pods-SmartPortfolio/Pods-SmartPortfolio.debug.xcconfig"; sourceTree = "<group>"; };
+		AE52C05624B2017A008F77D1 /* Stock+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Stock+CoreDataProperties.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Stock+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		AE52C05724B2017A008F77D1 /* ShareTags+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShareTags+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/ShareTags+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		AE52C05824B2017A008F77D1 /* ShareTags+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ShareTags+CoreDataClass.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/ShareTags+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		AE52C05924B2017A008F77D1 /* Portfolio+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Portfolio+CoreDataProperties.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Portfolio+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		AE52C05A24B2017A008F77D1 /* Quote+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Quote+CoreDataClass.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Quote+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		AE52C05B24B2017A008F77D1 /* ShareTags+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ShareTags+CoreDataClass.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/ShareTags+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		AE52C05C24B2017A008F77D1 /* Portfolio+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Portfolio+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Portfolio+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		AE52C05D24B2017A008F77D1 /* News+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "News+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/News+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		AE52C05E24B2017A008F77D1 /* Stock+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Stock+CoreDataClass.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Stock+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		AE52C05F24B2017A008F77D1 /* News+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "News+CoreDataProperties.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/News+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		AE52C06024B2017A008F77D1 /* News+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "News+CoreDataClass.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/News+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		AE52C06124B2017B008F77D1 /* ReferenceShare+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ReferenceShare+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/ReferenceShare+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		AE52C06224B2017B008F77D1 /* Tag+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Tag+CoreDataClass.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Tag+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		AE52C06324B2017B008F77D1 /* Country+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Country+CoreDataClass.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Country+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		AE52C06424B2017B008F77D1 /* CompanyIndustry+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CompanyIndustry+CoreDataClass.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/CompanyIndustry+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		AE52C06524B2017B008F77D1 /* Tag+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Tag+CoreDataProperties.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Tag+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		AE52C06624B2017B008F77D1 /* Stock+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Stock+CoreDataClass.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Stock+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		AE52C06724B2017B008F77D1 /* Country+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Country+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Country+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		AE52C06824B2017B008F77D1 /* Stock+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Stock+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Stock+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		AE52C06924B2017B008F77D1 /* ReferenceShare+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ReferenceShare+CoreDataClass.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/ReferenceShare+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		AE52C06A24B2017B008F77D1 /* ReferenceShare+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ReferenceShare+CoreDataClass.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/ReferenceShare+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		AE52C06B24B2017C008F77D1 /* CompanyIndustry+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CompanyIndustry+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/CompanyIndustry+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		AE52C06C24B2017C008F77D1 /* Sector+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Sector+CoreDataClass.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Sector+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		AE52C06D24B2017C008F77D1 /* CompanyIndustry+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CompanyIndustry+CoreDataClass.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/CompanyIndustry+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		AE52C06E24B2017C008F77D1 /* Sector+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Sector+CoreDataClass.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Sector+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		AE52C06F24B2017C008F77D1 /* News+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "News+CoreDataClass.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/News+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		AE52C07024B2017C008F77D1 /* Sector+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Sector+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Sector+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		AE52C07124B2017C008F77D1 /* Quote+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Quote+CoreDataClass.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Quote+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		AE52C07224B2017C008F77D1 /* ShareTags+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ShareTags+CoreDataProperties.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/ShareTags+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		AE52C07324B2017C008F77D1 /* Tag+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Tag+CoreDataClass.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Tag+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		AE52C07424B2017C008F77D1 /* Sector+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Sector+CoreDataProperties.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Sector+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		AE52C07524B2017C008F77D1 /* Tag+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Tag+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Tag+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		AE52C07624B2017D008F77D1 /* CompanyIndustry+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CompanyIndustry+CoreDataProperties.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/CompanyIndustry+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		AE52C07724B2017D008F77D1 /* Share+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Share+CoreDataProperties.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Share+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		AE52C07824B2017D008F77D1 /* Share+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Share+CoreDataClass.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Share+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		AE52C07924B2017D008F77D1 /* Portfolio+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Portfolio+CoreDataClass.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Portfolio+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		AE52C07A24B2017D008F77D1 /* Quote+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Quote+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Quote+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		AE52C07B24B2017D008F77D1 /* Quote+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Quote+CoreDataProperties.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Quote+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		AE52C07C24B2017D008F77D1 /* ReferenceShare+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ReferenceShare+CoreDataProperties.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/ReferenceShare+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		AE52C07D24B2017D008F77D1 /* Country+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Country+CoreDataClass.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Country+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		AE52C07E24B2017D008F77D1 /* Portfolio+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Portfolio+CoreDataClass.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Portfolio+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		AE52C07F24B2017D008F77D1 /* Country+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Country+CoreDataProperties.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Country+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		AE52C08024B2017E008F77D1 /* Share+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Share+CoreDataClass.m"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Share+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		AE52C08124B2017E008F77D1 /* Share+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Share+CoreDataProperties.h"; path = "/Users/mv/BITBUCKET/YahooFin/SmartPortfolio/DataModel/Share+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		AE52C09824B201B4008F77D1 /* IEXService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEXService.m; sourceTree = "<group>"; };
+		AE52C09924B201B4008F77D1 /* IEXService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEXService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -774,9 +774,9 @@
 		1BD3B7E4249F946E008C5FB3 /* FinanceAPI */ = {
 			isa = PBXGroup;
 			children = (
+				AE52C09924B201B4008F77D1 /* IEXService.h */,
+				AE52C09824B201B4008F77D1 /* IEXService.m */,
 				1B59449924A20ACA0015D7FF /* ReferenceLoader */,
-				1BD3B7EB24A07324008C5FB3 /* IEXService.h */,
-				1BD3B7EA24A07324008C5FB3 /* IEXService.m */,
 				1BD3B7E5249F9495008C5FB3 /* YahooFinService.h */,
 				1BD3B7E6249F9495008C5FB3 /* YahooFinService.m */,
 			);
@@ -786,50 +786,50 @@
 		1BD3B7ED24A07F3E008C5FB3 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				1BD3B80E24A0AEF0008C5FB3 /* Stock+CoreDataProperties.h */,
-				1BD3B80824A0AEEF008C5FB3 /* Stock+CoreDataClass.h */,
-				1BD3B81024A0AEF0008C5FB3 /* Stock+CoreDataClass.m */,
-				1BD3B80924A0AEEF008C5FB3 /* Stock+CoreDataProperties.m */,
-				1BD3B7F824A0AEED008C5FB3 /* Sector+CoreDataProperties.h */,
-				1BD3B81424A0AEF0008C5FB3 /* Sector+CoreDataClass.h */,
-				1BD3B80A24A0AEEF008C5FB3 /* Sector+CoreDataClass.m */,
-				1BD3B81A24A0AEF1008C5FB3 /* Sector+CoreDataProperties.m */,
-				1BD3B7F224A0AEED008C5FB3 /* Share+CoreDataProperties.h */,
-				1BD3B80B24A0AEEF008C5FB3 /* Share+CoreDataClass.h */,
-				1BD3B7FE24A0AEEE008C5FB3 /* Share+CoreDataClass.m */,
-				1BD3B7FB24A0AEEE008C5FB3 /* Share+CoreDataProperties.m */,
-				1BD3B7FF24A0AEEE008C5FB3 /* Country+CoreDataProperties.h */,
-				1BD3B81824A0AEF1008C5FB3 /* Country+CoreDataClass.h */,
-				1BD3B7FD24A0AEEE008C5FB3 /* Country+CoreDataClass.m */,
-				1BD3B80F24A0AEF0008C5FB3 /* Country+CoreDataProperties.m */,
-				1BD3B80224A0AEEE008C5FB3 /* News+CoreDataProperties.h */,
-				1BD3B7F724A0AEED008C5FB3 /* News+CoreDataClass.h */,
-				1BD3B81624A0AEF1008C5FB3 /* News+CoreDataClass.m */,
-				1BD3B80C24A0AEEF008C5FB3 /* News+CoreDataProperties.m */,
-				1BD3B81524A0AEF1008C5FB3 /* CompanyIndustry+CoreDataProperties.h */,
-				1BD3B7FC24A0AEEE008C5FB3 /* CompanyIndustry+CoreDataClass.h */,
-				1BD3B7F424A0AEED008C5FB3 /* CompanyIndustry+CoreDataClass.m */,
-				1BD3B80424A0AEEF008C5FB3 /* CompanyIndustry+CoreDataProperties.m */,
-				1BD3B80D24A0AEF0008C5FB3 /* Portfolio+CoreDataProperties.h */,
-				1BD3B7FA24A0AEEE008C5FB3 /* Portfolio+CoreDataClass.h */,
-				1BD3B7F124A0AEED008C5FB3 /* Portfolio+CoreDataClass.m */,
-				1BD3B81B24A0AEF1008C5FB3 /* Portfolio+CoreDataProperties.m */,
-				1BD3B81124A0AEF0008C5FB3 /* Tag+CoreDataProperties.h */,
-				1BD3B80024A0AEEE008C5FB3 /* Tag+CoreDataClass.h */,
-				1BD3B81224A0AEF0008C5FB3 /* Tag+CoreDataClass.m */,
-				1BD3B81324A0AEF0008C5FB3 /* Tag+CoreDataProperties.m */,
-				1BD3B81724A0AEF1008C5FB3 /* ShareTags+CoreDataProperties.h */,
-				1BD3B7F624A0AEED008C5FB3 /* ShareTags+CoreDataClass.h */,
-				1BD3B81C24A0AEF1008C5FB3 /* ShareTags+CoreDataClass.m */,
-				1BD3B80524A0AEEF008C5FB3 /* ShareTags+CoreDataProperties.m */,
-				1BD3B80624A0AEEF008C5FB3 /* Quote+CoreDataProperties.h */,
-				1BD3B7F324A0AEED008C5FB3 /* Quote+CoreDataClass.h */,
-				1BD3B7F524A0AEED008C5FB3 /* Quote+CoreDataClass.m */,
-				1BD3B80724A0AEEF008C5FB3 /* Quote+CoreDataProperties.m */,
-				1BD3B80324A0AEEE008C5FB3 /* ReferenceShare+CoreDataProperties.h */,
-				1BD3B7F924A0AEEE008C5FB3 /* ReferenceShare+CoreDataClass.h */,
-				1BD3B80124A0AEEE008C5FB3 /* ReferenceShare+CoreDataClass.m */,
-				1BD3B81924A0AEF1008C5FB3 /* ReferenceShare+CoreDataProperties.m */,
+				AE52C06424B2017B008F77D1 /* CompanyIndustry+CoreDataClass.h */,
+				AE52C06D24B2017C008F77D1 /* CompanyIndustry+CoreDataClass.m */,
+				AE52C06B24B2017C008F77D1 /* CompanyIndustry+CoreDataProperties.h */,
+				AE52C07624B2017D008F77D1 /* CompanyIndustry+CoreDataProperties.m */,
+				AE52C07D24B2017D008F77D1 /* Country+CoreDataClass.h */,
+				AE52C06324B2017B008F77D1 /* Country+CoreDataClass.m */,
+				AE52C06724B2017B008F77D1 /* Country+CoreDataProperties.h */,
+				AE52C07F24B2017D008F77D1 /* Country+CoreDataProperties.m */,
+				AE52C06F24B2017C008F77D1 /* News+CoreDataClass.h */,
+				AE52C06024B2017A008F77D1 /* News+CoreDataClass.m */,
+				AE52C05D24B2017A008F77D1 /* News+CoreDataProperties.h */,
+				AE52C05F24B2017A008F77D1 /* News+CoreDataProperties.m */,
+				AE52C07924B2017D008F77D1 /* Portfolio+CoreDataClass.h */,
+				AE52C07E24B2017D008F77D1 /* Portfolio+CoreDataClass.m */,
+				AE52C05C24B2017A008F77D1 /* Portfolio+CoreDataProperties.h */,
+				AE52C05924B2017A008F77D1 /* Portfolio+CoreDataProperties.m */,
+				AE52C05A24B2017A008F77D1 /* Quote+CoreDataClass.h */,
+				AE52C07124B2017C008F77D1 /* Quote+CoreDataClass.m */,
+				AE52C07A24B2017D008F77D1 /* Quote+CoreDataProperties.h */,
+				AE52C07B24B2017D008F77D1 /* Quote+CoreDataProperties.m */,
+				AE52C06924B2017B008F77D1 /* ReferenceShare+CoreDataClass.h */,
+				AE52C06A24B2017B008F77D1 /* ReferenceShare+CoreDataClass.m */,
+				AE52C06124B2017B008F77D1 /* ReferenceShare+CoreDataProperties.h */,
+				AE52C07C24B2017D008F77D1 /* ReferenceShare+CoreDataProperties.m */,
+				AE52C06E24B2017C008F77D1 /* Sector+CoreDataClass.h */,
+				AE52C06C24B2017C008F77D1 /* Sector+CoreDataClass.m */,
+				AE52C07024B2017C008F77D1 /* Sector+CoreDataProperties.h */,
+				AE52C07424B2017C008F77D1 /* Sector+CoreDataProperties.m */,
+				AE52C07824B2017D008F77D1 /* Share+CoreDataClass.h */,
+				AE52C08024B2017E008F77D1 /* Share+CoreDataClass.m */,
+				AE52C08124B2017E008F77D1 /* Share+CoreDataProperties.h */,
+				AE52C07724B2017D008F77D1 /* Share+CoreDataProperties.m */,
+				AE52C05824B2017A008F77D1 /* ShareTags+CoreDataClass.h */,
+				AE52C05B24B2017A008F77D1 /* ShareTags+CoreDataClass.m */,
+				AE52C05724B2017A008F77D1 /* ShareTags+CoreDataProperties.h */,
+				AE52C07224B2017C008F77D1 /* ShareTags+CoreDataProperties.m */,
+				AE52C06624B2017B008F77D1 /* Stock+CoreDataClass.h */,
+				AE52C05E24B2017A008F77D1 /* Stock+CoreDataClass.m */,
+				AE52C06824B2017B008F77D1 /* Stock+CoreDataProperties.h */,
+				AE52C05624B2017A008F77D1 /* Stock+CoreDataProperties.m */,
+				AE52C06224B2017B008F77D1 /* Tag+CoreDataClass.h */,
+				AE52C07324B2017C008F77D1 /* Tag+CoreDataClass.m */,
+				AE52C07524B2017C008F77D1 /* Tag+CoreDataProperties.h */,
+				AE52C06524B2017B008F77D1 /* Tag+CoreDataProperties.m */,
 				1BD3B7D4249F9178008C5FB3 /* SmartPortfolio.xcdatamodeld */,
 				1BD3B7EE24A08789008C5FB3 /* DAO.h */,
 				1BD3B7EF24A08789008C5FB3 /* DAO.m */,
@@ -1481,47 +1481,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BD3B7EC24A07324008C5FB3 /* IEXService.m in Sources */,
+				AE52C08B24B2017E008F77D1 /* Country+CoreDataClass.m in Sources */,
 				1BD3B7DE249F9180008C5FB3 /* main.m in Sources */,
+				AE52C09524B2017E008F77D1 /* CompanyIndustry+CoreDataClass.m in Sources */,
+				AE52C08F24B2017E008F77D1 /* ReferenceShare+CoreDataClass.m in Sources */,
 				1B5944C724A380BE0015D7FF /* UIButton+Animate.m in Sources */,
-				1BD3B82824A0AEF1008C5FB3 /* Quote+CoreDataProperties.m in Sources */,
-				1BD3B82724A0AEF1008C5FB3 /* Country+CoreDataProperties.m in Sources */,
-				1BD3B82E24A0AEF1008C5FB3 /* Country+CoreDataClass.m in Sources */,
-				1BD3B82224A0AEF1008C5FB3 /* Portfolio+CoreDataProperties.m in Sources */,
-				1BD3B82624A0AEF1008C5FB3 /* Sector+CoreDataClass.m in Sources */,
-				1BD3B82924A0AEF1008C5FB3 /* ReferenceShare+CoreDataClass.m in Sources */,
-				1BD3B82F24A0AEF1008C5FB3 /* Portfolio+CoreDataClass.m in Sources */,
 				1BD3B7D6249F9178008C5FB3 /* SmartPortfolio.xcdatamodeld in Sources */,
-				1BD3B82024A0AEF1008C5FB3 /* CompanyIndustry+CoreDataClass.m in Sources */,
+				AE52C08D24B2017E008F77D1 /* ShareTags+CoreDataProperties.m in Sources */,
+				AE52C09224B2017E008F77D1 /* Share+CoreDataProperties.m in Sources */,
 				1B5944B924A367C10015D7FF /* GMTabItemViewController.m in Sources */,
+				AE52C08724B2017E008F77D1 /* Country+CoreDataProperties.m in Sources */,
 				1BD96EDE24A3863F008BCEFC /* GMButtonMeniItem.m in Sources */,
-				1BD3B83124A0AEF1008C5FB3 /* ShareTags+CoreDataClass.m in Sources */,
+				AE52C08A24B2017E008F77D1 /* CompanyIndustry+CoreDataProperties.m in Sources */,
+				AE52C08C24B2017E008F77D1 /* Sector+CoreDataProperties.m in Sources */,
+				AE52C09A24B201B4008F77D1 /* IEXService.m in Sources */,
+				AE52C08224B2017E008F77D1 /* Tag+CoreDataProperties.m in Sources */,
 				1B5944C324A375FE0015D7FF /* UIColor+ColorHex.m in Sources */,
+				AE52C08324B2017E008F77D1 /* ReferenceShare+CoreDataProperties.m in Sources */,
+				AE52C09424B2017E008F77D1 /* Stock+CoreDataProperties.m in Sources */,
 				1BD3B7D0249F9178008C5FB3 /* ViewController.m in Sources */,
-				1BD3B82324A0AEF1008C5FB3 /* Tag+CoreDataProperties.m in Sources */,
 				1BD3B83624A0D914008C5FB3 /* CountryInfo.m in Sources */,
+				AE52C09324B2017E008F77D1 /* Quote+CoreDataProperties.m in Sources */,
 				1BD3B7F024A08789008C5FB3 /* DAO.m in Sources */,
-				1BD3B81E24A0AEF1008C5FB3 /* Share+CoreDataProperties.m in Sources */,
-				1BD3B83024A0AEF1008C5FB3 /* ReferenceShare+CoreDataProperties.m in Sources */,
-				1BD3B81F24A0AEF1008C5FB3 /* Stock+CoreDataProperties.m in Sources */,
+				AE52C08924B2017E008F77D1 /* Portfolio+CoreDataProperties.m in Sources */,
 				1BD96EFB24A4ED8F008BCEFC /* GMStackMenu.m in Sources */,
 				1BD3B7CA249F9178008C5FB3 /* AppDelegate.m in Sources */,
-				1BD3B81D24A0AEF1008C5FB3 /* CompanyIndustry+CoreDataProperties.m in Sources */,
-				1BD3B82424A0AEF1008C5FB3 /* News+CoreDataProperties.m in Sources */,
+				AE52C09124B2017E008F77D1 /* Sector+CoreDataClass.m in Sources */,
+				AE52C08524B2017E008F77D1 /* Quote+CoreDataClass.m in Sources */,
 				1B5944BF24A36DE60015D7FF /* GMGradient.m in Sources */,
+				AE52C08624B2017E008F77D1 /* Stock+CoreDataClass.m in Sources */,
+				AE52C09024B2017E008F77D1 /* News+CoreDataProperties.m in Sources */,
 				1B5944C424A37D560015D7FF /* GMMenuCircularButton.m in Sources */,
+				AE52C09724B2017E008F77D1 /* Share+CoreDataClass.m in Sources */,
 				1B59449D24A20AF20015D7FF /* ReferenceLoaderVCViewController.m in Sources */,
-				1BD3B82524A0AEF1008C5FB3 /* Tag+CoreDataClass.m in Sources */,
-				1BD3B82D24A0AEF1008C5FB3 /* ShareTags+CoreDataProperties.m in Sources */,
-				1BD3B82C24A0AEF1008C5FB3 /* Quote+CoreDataClass.m in Sources */,
 				1B5944A424A212240015D7FF /* Reachability.m in Sources */,
-				1BD3B82A24A0AEF1008C5FB3 /* Stock+CoreDataClass.m in Sources */,
+				AE52C08E24B2017E008F77D1 /* ShareTags+CoreDataClass.m in Sources */,
+				AE52C08424B2017E008F77D1 /* Portfolio+CoreDataClass.m in Sources */,
 				1B5944B824A367C10015D7FF /* GMTabsViewController.m in Sources */,
 				1B5944B724A367C10015D7FF /* GMTabsView.m in Sources */,
-				1BD3B82124A0AEF1008C5FB3 /* News+CoreDataClass.m in Sources */,
-				1BD3B83224A0AEF1008C5FB3 /* Share+CoreDataClass.m in Sources */,
+				AE52C08824B2017E008F77D1 /* News+CoreDataClass.m in Sources */,
+				AE52C09624B2017E008F77D1 /* Tag+CoreDataClass.m in Sources */,
 				1BD3B7CD249F9178008C5FB3 /* SceneDelegate.m in Sources */,
-				1BD3B82B24A0AEF1008C5FB3 /* Sector+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

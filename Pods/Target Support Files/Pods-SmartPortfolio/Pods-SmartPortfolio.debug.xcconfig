@@ -1,0 +1,9 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/LMSideBarController" "${PODS_ROOT}/Headers/Public/SAMKeychain" "${PODS_ROOT}/Headers/Public/SDVersion" "${PODS_ROOT}/Headers/Public/Toast" "${PODS_ROOT}/Headers/Public/YLProgressBar"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/LMSideBarController" "${PODS_CONFIGURATION_BUILD_DIR}/SAMKeychain" "${PODS_CONFIGURATION_BUILD_DIR}/SDVersion" "${PODS_CONFIGURATION_BUILD_DIR}/Toast" "${PODS_CONFIGURATION_BUILD_DIR}/YLProgressBar"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"LMSideBarController" -l"SAMKeychain" -l"SDVersion" -l"Toast" -l"YLProgressBar" -framework "CoreGraphics" -framework "Foundation" -framework "QuartzCore" -framework "Security" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

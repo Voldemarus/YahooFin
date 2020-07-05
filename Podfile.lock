@@ -1,0 +1,32 @@
+PODS:
+  - LMSideBarController (1.0.2)
+  - SAMKeychain (1.5.3)
+  - SDVersion (4.3.2)
+  - Toast (4.0.0)
+  - YLProgressBar (3.10.2)
+
+DEPENDENCIES:
+  - LMSideBarController
+  - SAMKeychain
+  - SDVersion
+  - Toast
+  - YLProgressBar (~> 3.10.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - LMSideBarController
+    - SAMKeychain
+    - SDVersion
+    - Toast
+    - YLProgressBar
+
+SPEC CHECKSUMS:
+  LMSideBarController: f949cf59a1d8f20ba7a7acc60244327fa2de54fd
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDVersion: 18f32c835c1543611fcfae3c6accd9a04b90597e
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  YLProgressBar: 365b6c5e934be18b661f79413db33c993c8e8251
+
+PODFILE CHECKSUM: c22d553f478abc0dc14a4f9c49551f723749b482
+
+COCOAPODS: 1.9.1
