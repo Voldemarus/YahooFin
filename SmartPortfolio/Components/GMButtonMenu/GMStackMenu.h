@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 
-@interface GMStackMenu : UIStackView
+@interface GMStackMenu : UIView
 
 @property (nonatomic, assign) id <GMStackMenuDelegate> delegate;
 
