@@ -15,7 +15,6 @@
 
 @interface GMStackMenu()
 
-
 @end
 
 @implementation GMStackMenu
@@ -34,11 +33,11 @@
 
 - (void) stackConfiguration
 {
-//    self.axis = UILayoutConstraintAxisVertical;
-//    self.alignment = UIStackViewAlignmentCenter;
-//    self.distribution = UIStackViewDistributionFillEqually;
-//    self.spacing = 0.0;
-//    self.contentMode = UIViewContentModeScaleToFill;
+    self.axis = UILayoutConstraintAxisVertical;
+    self.alignment = UIStackViewAlignmentCenter;
+    self.distribution = UIStackViewDistributionFillEqually;
+    self.spacing = .0;
+    self.contentMode = UIViewContentModeScaleToFill;
 
      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(buttonClicked:) name: GMCircularButtonTapped object:nil];
 }
@@ -58,28 +57,55 @@
 
     CGFloat buttonSize = 0.75 * (self.frame.size.width - leadTrail * 2.0)/ BUTTONS_PER_ROW;
     CGFloat xStep = buttonSize * 0.25;
-    CGFloat yoffset = (self.frame.size.height - buttonSize*rows - xStep*(rows - 1)) / 2.0;
+//    CGFloat yoffset = (self.frame.size.height - buttonSize*rows - xStep*(rows - 1)) / 2.0;
+    CGFloat internalWidth = BUTTONS_PER_ROW * buttonSize + xStep*(BUTTONS_PER_ROW - 1);
 
-    
+    CGFloat externalHeight = rows * buttonSize + (rows - 1) * xStep;
+    [self.heightAnchor constraintEqualToConstant:externalHeight].active = true;
+
+    UIStackView *internalHor = nil;
     for (NSInteger i = 0; i < bList.count; i++) {
         NSArray *a = bList[i];
         NSInteger rowOffset = i % BUTTONS_PER_ROW;
-        NSInteger currentRow = i  / BUTTONS_PER_ROW;
+        if (rowOffset == 0) {
+
+            internalHor = [[UIStackView alloc] init];
+            internalHor.axis = UILayoutConstraintAxisHorizontal;
+            internalHor.alignment = UIStackViewAlignmentCenter;
+            internalHor.distribution = UIStackViewDistributionFillEqually;
+            internalHor.spacing = xStep;
+            internalHor.contentMode = UIViewContentModeScaleToFill;
+            [internalHor.heightAnchor constraintEqualToConstant:buttonSize].active = true;
+            [internalHor.widthAnchor constraintEqualToConstant:internalWidth].active = true;
+
+
+            NSLog(@"internal - %@",internalHor);
+            CALayer *l = internalHor.layer;
+            l.backgroundColor = [UIColor orangeColor].CGColor;
+            l.borderWidth = 2.0;
+            l.borderColor = [UIColor blueColor].CGColor;
+
+            [self addArrangedSubview:internalHor];
+        }
+ //       NSInteger currentRow = i  / BUTTONS_PER_ROW;
         NSInteger tag = [a[0] integerValue];    // тег кнопки
         NSString *imName = a[1];
         NSString *lblText = a[2];
         GMGradient *gradient = a[3];
 
-        CGFloat xOffset = leadTrail + rowOffset * (buttonSize + xStep);
-        CGFloat yOffset = yoffset + currentRow  * (buttonSize + xStep);
+//        CGFloat xOffset = leadTrail + rowOffset * (buttonSize + xStep);
+//        CGFloat yOffset = yoffset + currentRow  * (buttonSize + xStep);
 
-        CGRect buttonFrame = CGRectMake(xOffset,yOffset,buttonSize, buttonSize);
+        CGRect buttonFrame = CGRectMake(0,0,buttonSize, buttonSize);
         GMButtonMeniItem *item = [[GMButtonMeniItem alloc] initWithFrame:buttonFrame imageName:imName
                                                                labelText:lblText gradient:gradient
                                                          andComponentTag:tag];
+        [item.heightAnchor constraintEqualToConstant:buttonSize].active = true;
+        [item.widthAnchor constraintEqualToConstant:buttonSize].active = true;
 
-        [self addSubview:item];
-     }
+        [internalHor addArrangedSubview:item];
+        
+    }
     // добавим блюр
     CGRect frame = self.frame;
     UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
@@ -88,6 +114,7 @@
     [self insertSubview:efView belowSubview:self.subviews.firstObject];
 
 }
+
 
 
 
